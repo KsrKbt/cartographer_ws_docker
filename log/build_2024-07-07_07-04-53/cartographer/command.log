@@ -1,0 +1,6 @@
+Invoking command in '/root/cartographer_ws_docker/build/cartographer': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /root/cartographer_ws_docker/src/cartographer -DCMAKE_INSTALL_PREFIX=/root/cartographer_ws_docker/install/cartographer
+Invoked command in '/root/cartographer_ws_docker/build/cartographer' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /root/cartographer_ws_docker/src/cartographer -DCMAKE_INSTALL_PREFIX=/root/cartographer_ws_docker/install/cartographer
+Invoking command in '/root/cartographer_ws_docker/build/cartographer': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /root/cartographer_ws_docker/build/cartographer -- -j8 -l8
+Invoked command in '/root/cartographer_ws_docker/build/cartographer' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /root/cartographer_ws_docker/build/cartographer -- -j8 -l8
+Invoking command in '/root/cartographer_ws_docker/build/cartographer': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /root/cartographer_ws_docker/build/cartographer
+Invoked command in '/root/cartographer_ws_docker/build/cartographer' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /root/cartographer_ws_docker/build/cartographer
