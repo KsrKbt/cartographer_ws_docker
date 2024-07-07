@@ -1,8 +1,8 @@
 CMakeFiles/cartographer.mapping.pose_graph_trimmer_test.dir/cartographer/mapping/pose_graph_trimmer_test.cc.o: \
- /root/cartographer_ws/src/cartographer/cartographer/mapping/pose_graph_trimmer_test.cc \
+ /root/cartographer_ws_docker/src/cartographer/cartographer/mapping/pose_graph_trimmer_test.cc \
  /usr/include/stdc-predef.h \
- /root/cartographer_ws/src/cartographer/cartographer/mapping/pose_graph_trimmer.h \
- /root/cartographer_ws/src/cartographer/cartographer/mapping/id.h \
+ /root/cartographer_ws_docker/src/cartographer/cartographer/mapping/pose_graph_trimmer.h \
+ /root/cartographer_ws_docker/src/cartographer/cartographer/mapping/id.h \
  /usr/include/c++/11/algorithm /usr/include/c++/11/utility \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
@@ -208,7 +208,7 @@ CMakeFiles/cartographer.mapping.pose_graph_trimmer_test.dir/cartographer/mapping
  /usr/include/absl/base/policy_checks.h \
  /usr/include/absl/base/optimization.h /usr/include/absl/base/port.h \
  /usr/include/absl/meta/type_traits.h \
- /root/cartographer_ws/src/cartographer/cartographer/common/port.h \
+ /root/cartographer_ws_docker/src/cartographer/cartographer/common/port.h \
  /usr/include/boost/iostreams/device/back_inserter.hpp \
  /usr/include/boost/iostreams/detail/ios.hpp \
  /usr/include/boost/config.hpp /usr/include/boost/config/user.hpp \
@@ -675,10 +675,10 @@ CMakeFiles/cartographer.mapping.pose_graph_trimmer_test.dir/cartographer/mapping
  /usr/include/c++/11/tr1/poly_hermite.tcc \
  /usr/include/c++/11/tr1/poly_laguerre.tcc \
  /usr/include/c++/11/tr1/riemann_zeta.tcc \
- /root/cartographer_ws/src/cartographer/cartographer/common/time.h \
+ /root/cartographer_ws_docker/src/cartographer/cartographer/common/time.h \
  /usr/include/c++/11/chrono /usr/include/c++/11/ratio \
  /usr/include/c++/11/bits/parse_numbers.h \
- /root/cartographer_ws/build/cartographer/cartographer/mapping/proto/pose_graph.pb.h \
+ /root/cartographer_ws_docker/build/cartographer/cartographer/mapping/proto/pose_graph.pb.h \
  /usr/include/google/protobuf/port_def.inc \
  /usr/include/google/protobuf/port_undef.inc \
  /usr/include/google/protobuf/io/coded_stream.h \
@@ -755,20 +755,20 @@ CMakeFiles/cartographer.mapping.pose_graph_trimmer_test.dir/cartographer/mapping
  /usr/include/google/protobuf/stubs/stl_util.h \
  /usr/include/google/protobuf/message.h \
  /usr/include/google/protobuf/extension_set.h \
- /root/cartographer_ws/build/cartographer/cartographer/mapping/proto/trajectory.pb.h \
- /root/cartographer_ws/build/cartographer/cartographer/transform/proto/transform.pb.h \
+ /root/cartographer_ws_docker/build/cartographer/cartographer/mapping/proto/trajectory.pb.h \
+ /root/cartographer_ws_docker/build/cartographer/cartographer/transform/proto/transform.pb.h \
  /usr/include/glog/logging.h /usr/include/c++/11/sstream \
  /usr/include/c++/11/bits/sstream.tcc /usr/include/gflags/gflags.h \
  /usr/include/gflags/gflags_declare.h /usr/include/gflags/gflags_gflags.h \
  /usr/include/glog/log_severity.h /usr/include/glog/vlog_is_on.h \
- /root/cartographer_ws/src/cartographer/cartographer/mapping/pose_graph_interface.h \
+ /root/cartographer_ws_docker/src/cartographer/cartographer/mapping/pose_graph_interface.h \
  /usr/include/absl/types/optional.h /usr/include/absl/utility/utility.h \
  /usr/include/absl/base/internal/inline_variable.h \
  /usr/include/absl/base/internal/identity.h \
  /usr/include/absl/base/internal/invoke.h \
  /usr/include/absl/types/bad_optional_access.h \
  /usr/include/absl/types/internal/optional.h \
- /root/cartographer_ws/src/cartographer/cartographer/mapping/submaps.h \
+ /root/cartographer_ws_docker/src/cartographer/cartographer/mapping/submaps.h \
  /usr/include/eigen3/Eigen/Geometry /usr/include/eigen3/Eigen/Core \
  /usr/include/eigen3/Eigen/src/Core/util/DisableStupidWarnings.h \
  /usr/include/eigen3/Eigen/src/Core/util/Macros.h \
@@ -942,7 +942,7 @@ CMakeFiles/cartographer.mapping.pose_graph_trimmer_test.dir/cartographer/mapping
  /usr/include/eigen3/Eigen/src/Geometry/AlignedBox.h \
  /usr/include/eigen3/Eigen/src/Geometry/Umeyama.h \
  /usr/include/eigen3/Eigen/src/Geometry/arch/Geometry_SIMD.h \
- /root/cartographer_ws/src/cartographer/cartographer/common/math.h \
+ /root/cartographer_ws_docker/src/cartographer/cartographer/common/math.h \
  /usr/include/eigen3/Eigen/Core /usr/include/ceres/ceres.h \
  /usr/include/ceres/autodiff_cost_function.h \
  /usr/include/ceres/internal/autodiff.h \
@@ -1006,44 +1006,44 @@ CMakeFiles/cartographer.mapping.pose_graph_trimmer_test.dir/cartographer/mapping
  /usr/include/ceres/numeric_diff_cost_function.h \
  /usr/include/ceres/ordered_groups.h /usr/include/ceres/problem.h \
  /usr/include/ceres/solver.h /usr/include/ceres/version.h \
- /root/cartographer_ws/src/cartographer/cartographer/mapping/probability_values.h \
- /root/cartographer_ws/build/cartographer/cartographer/mapping/proto/serialization.pb.h \
- /root/cartographer_ws/build/cartographer/cartographer/mapping/proto/submap.pb.h \
- /root/cartographer_ws/build/cartographer/cartographer/mapping/proto/grid_2d.pb.h \
- /root/cartographer_ws/build/cartographer/cartographer/mapping/proto/map_limits.pb.h \
- /root/cartographer_ws/build/cartographer/cartographer/mapping/proto/cell_limits_2d.pb.h \
- /root/cartographer_ws/build/cartographer/cartographer/mapping/proto/probability_grid.pb.h \
- /root/cartographer_ws/build/cartographer/cartographer/mapping/proto/tsdf_2d.pb.h \
- /root/cartographer_ws/build/cartographer/cartographer/mapping/proto/hybrid_grid.pb.h \
- /root/cartographer_ws/build/cartographer/cartographer/mapping/proto/trajectory_node_data.pb.h \
- /root/cartographer_ws/build/cartographer/cartographer/sensor/proto/sensor.pb.h \
- /root/cartographer_ws/build/cartographer/cartographer/mapping/proto/trajectory_builder_options.pb.h \
- /root/cartographer_ws/build/cartographer/cartographer/mapping/proto/motion_filter_options.pb.h \
- /root/cartographer_ws/build/cartographer/cartographer/mapping/proto/local_trajectory_builder_options_2d.pb.h \
- /root/cartographer_ws/build/cartographer/cartographer/mapping/proto/pose_extrapolator_options.pb.h \
- /root/cartographer_ws/build/cartographer/cartographer/common/proto/ceres_solver_options.pb.h \
- /root/cartographer_ws/build/cartographer/cartographer/sensor/proto/adaptive_voxel_filter_options.pb.h \
- /root/cartographer_ws/build/cartographer/cartographer/mapping/proto/scan_matching/ceres_scan_matcher_options_2d.pb.h \
- /root/cartographer_ws/build/cartographer/cartographer/mapping/proto/scan_matching/real_time_correlative_scan_matcher_options.pb.h \
- /root/cartographer_ws/build/cartographer/cartographer/mapping/proto/submaps_options_2d.pb.h \
- /root/cartographer_ws/build/cartographer/cartographer/mapping/proto/grid_2d_options.pb.h \
- /root/cartographer_ws/build/cartographer/cartographer/mapping/proto/range_data_inserter_options.pb.h \
- /root/cartographer_ws/build/cartographer/cartographer/mapping/proto/probability_grid_range_data_inserter_options_2d.pb.h \
- /root/cartographer_ws/build/cartographer/cartographer/mapping/proto/tsdf_range_data_inserter_options_2d.pb.h \
- /root/cartographer_ws/build/cartographer/cartographer/mapping/proto/normal_estimation_options_2d.pb.h \
- /root/cartographer_ws/build/cartographer/cartographer/mapping/proto/local_trajectory_builder_options_3d.pb.h \
- /root/cartographer_ws/build/cartographer/cartographer/mapping/proto/scan_matching/ceres_scan_matcher_options_3d.pb.h \
- /root/cartographer_ws/build/cartographer/cartographer/mapping/proto/submaps_options_3d.pb.h \
- /root/cartographer_ws/build/cartographer/cartographer/mapping/proto/range_data_inserter_options_3d.pb.h \
- /root/cartographer_ws/build/cartographer/cartographer/transform/proto/timestamped_transform.pb.h \
- /root/cartographer_ws/build/cartographer/cartographer/mapping/proto/submap_visualization.pb.h \
- /root/cartographer_ws/src/cartographer/cartographer/mapping/trajectory_node.h \
- /root/cartographer_ws/src/cartographer/cartographer/sensor/range_data.h \
- /root/cartographer_ws/src/cartographer/cartographer/sensor/compressed_point_cloud.h \
- /root/cartographer_ws/src/cartographer/cartographer/sensor/point_cloud.h \
- /root/cartographer_ws/src/cartographer/cartographer/sensor/rangefinder_point.h \
- /root/cartographer_ws/src/cartographer/cartographer/transform/transform.h \
- /root/cartographer_ws/src/cartographer/cartographer/transform/rigid_transform.h \
+ /root/cartographer_ws_docker/src/cartographer/cartographer/mapping/probability_values.h \
+ /root/cartographer_ws_docker/build/cartographer/cartographer/mapping/proto/serialization.pb.h \
+ /root/cartographer_ws_docker/build/cartographer/cartographer/mapping/proto/submap.pb.h \
+ /root/cartographer_ws_docker/build/cartographer/cartographer/mapping/proto/grid_2d.pb.h \
+ /root/cartographer_ws_docker/build/cartographer/cartographer/mapping/proto/map_limits.pb.h \
+ /root/cartographer_ws_docker/build/cartographer/cartographer/mapping/proto/cell_limits_2d.pb.h \
+ /root/cartographer_ws_docker/build/cartographer/cartographer/mapping/proto/probability_grid.pb.h \
+ /root/cartographer_ws_docker/build/cartographer/cartographer/mapping/proto/tsdf_2d.pb.h \
+ /root/cartographer_ws_docker/build/cartographer/cartographer/mapping/proto/hybrid_grid.pb.h \
+ /root/cartographer_ws_docker/build/cartographer/cartographer/mapping/proto/trajectory_node_data.pb.h \
+ /root/cartographer_ws_docker/build/cartographer/cartographer/sensor/proto/sensor.pb.h \
+ /root/cartographer_ws_docker/build/cartographer/cartographer/mapping/proto/trajectory_builder_options.pb.h \
+ /root/cartographer_ws_docker/build/cartographer/cartographer/mapping/proto/motion_filter_options.pb.h \
+ /root/cartographer_ws_docker/build/cartographer/cartographer/mapping/proto/local_trajectory_builder_options_2d.pb.h \
+ /root/cartographer_ws_docker/build/cartographer/cartographer/mapping/proto/pose_extrapolator_options.pb.h \
+ /root/cartographer_ws_docker/build/cartographer/cartographer/common/proto/ceres_solver_options.pb.h \
+ /root/cartographer_ws_docker/build/cartographer/cartographer/sensor/proto/adaptive_voxel_filter_options.pb.h \
+ /root/cartographer_ws_docker/build/cartographer/cartographer/mapping/proto/scan_matching/ceres_scan_matcher_options_2d.pb.h \
+ /root/cartographer_ws_docker/build/cartographer/cartographer/mapping/proto/scan_matching/real_time_correlative_scan_matcher_options.pb.h \
+ /root/cartographer_ws_docker/build/cartographer/cartographer/mapping/proto/submaps_options_2d.pb.h \
+ /root/cartographer_ws_docker/build/cartographer/cartographer/mapping/proto/grid_2d_options.pb.h \
+ /root/cartographer_ws_docker/build/cartographer/cartographer/mapping/proto/range_data_inserter_options.pb.h \
+ /root/cartographer_ws_docker/build/cartographer/cartographer/mapping/proto/probability_grid_range_data_inserter_options_2d.pb.h \
+ /root/cartographer_ws_docker/build/cartographer/cartographer/mapping/proto/tsdf_range_data_inserter_options_2d.pb.h \
+ /root/cartographer_ws_docker/build/cartographer/cartographer/mapping/proto/normal_estimation_options_2d.pb.h \
+ /root/cartographer_ws_docker/build/cartographer/cartographer/mapping/proto/local_trajectory_builder_options_3d.pb.h \
+ /root/cartographer_ws_docker/build/cartographer/cartographer/mapping/proto/scan_matching/ceres_scan_matcher_options_3d.pb.h \
+ /root/cartographer_ws_docker/build/cartographer/cartographer/mapping/proto/submaps_options_3d.pb.h \
+ /root/cartographer_ws_docker/build/cartographer/cartographer/mapping/proto/range_data_inserter_options_3d.pb.h \
+ /root/cartographer_ws_docker/build/cartographer/cartographer/transform/proto/timestamped_transform.pb.h \
+ /root/cartographer_ws_docker/build/cartographer/cartographer/mapping/proto/submap_visualization.pb.h \
+ /root/cartographer_ws_docker/src/cartographer/cartographer/mapping/trajectory_node.h \
+ /root/cartographer_ws_docker/src/cartographer/cartographer/sensor/range_data.h \
+ /root/cartographer_ws_docker/src/cartographer/cartographer/sensor/compressed_point_cloud.h \
+ /root/cartographer_ws_docker/src/cartographer/cartographer/sensor/point_cloud.h \
+ /root/cartographer_ws_docker/src/cartographer/cartographer/sensor/rangefinder_point.h \
+ /root/cartographer_ws_docker/src/cartographer/cartographer/transform/transform.h \
+ /root/cartographer_ws_docker/src/cartographer/cartographer/transform/rigid_transform.h \
  /usr/include/absl/strings/substitute.h /usr/include/absl/strings/ascii.h \
  /usr/include/absl/strings/string_view.h \
  /usr/include/absl/base/internal/throw_delegate.h \
@@ -1063,13 +1063,13 @@ CMakeFiles/cartographer.mapping.pose_graph_trimmer_test.dir/cartographer/mapping
  /usr/include/absl/base/log_severity.h \
  /usr/include/absl/strings/internal/str_split_internal.h \
  /usr/include/absl/strings/strip.h /usr/include/absl/strings/match.h \
- /root/cartographer_ws/src/cartographer/cartographer/common/lua_parameter_dictionary.h \
- /root/cartographer_ws/src/cartographer/cartographer/common/lua.h \
+ /root/cartographer_ws_docker/src/cartographer/cartographer/common/lua_parameter_dictionary.h \
+ /root/cartographer_ws_docker/src/cartographer/cartographer/common/lua.h \
  /usr/include/lua5.2/lua.hpp /usr/include/lua5.2/lua.h \
  /usr/include/lua5.2/luaconf.h \
  /usr/include/x86_64-linux-gnu/lua5.2-deb-multiarch.h \
  /usr/include/lua5.2/lualib.h /usr/include/lua5.2/lauxlib.h \
- /root/cartographer_ws/src/cartographer/cartographer/mapping/internal/testing/fake_trimmable.h \
+ /root/cartographer_ws_docker/src/cartographer/cartographer/mapping/internal/testing/fake_trimmable.h \
  /usr/src/googletest/googletest/include/gtest/gtest.h \
  /usr/src/googletest/googletest/include/gtest/internal/gtest-internal.h \
  /usr/src/googletest/googletest/include/gtest/internal/gtest-port.h \

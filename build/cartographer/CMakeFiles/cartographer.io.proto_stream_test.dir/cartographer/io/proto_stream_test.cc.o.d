@@ -1,7 +1,7 @@
 CMakeFiles/cartographer.io.proto_stream_test.dir/cartographer/io/proto_stream_test.cc.o: \
- /root/cartographer_ws/src/cartographer/cartographer/io/proto_stream_test.cc \
+ /root/cartographer_ws_docker/src/cartographer/cartographer/io/proto_stream_test.cc \
  /usr/include/stdc-predef.h \
- /root/cartographer_ws/src/cartographer/cartographer/io/proto_stream.h \
+ /root/cartographer_ws_docker/src/cartographer/cartographer/io/proto_stream.h \
  /usr/include/c++/11/fstream /usr/include/c++/11/istream \
  /usr/include/c++/11/ios /usr/include/c++/11/iosfwd \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
@@ -156,7 +156,7 @@ CMakeFiles/cartographer.io.proto_stream_test.dir/cartographer/io/proto_stream_te
  /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h \
  /usr/include/c++/11/bits/fstream.tcc \
- /root/cartographer_ws/src/cartographer/cartographer/common/port.h \
+ /root/cartographer_ws_docker/src/cartographer/cartographer/common/port.h \
  /usr/include/boost/iostreams/device/back_inserter.hpp \
  /usr/include/boost/iostreams/detail/ios.hpp \
  /usr/include/boost/config.hpp /usr/include/boost/config/user.hpp \
@@ -670,7 +670,7 @@ CMakeFiles/cartographer.io.proto_stream_test.dir/cartographer/io/proto_stream_te
  /usr/include/c++/11/tr1/poly_hermite.tcc \
  /usr/include/c++/11/tr1/poly_laguerre.tcc \
  /usr/include/c++/11/tr1/riemann_zeta.tcc \
- /root/cartographer_ws/src/cartographer/cartographer/io/proto_stream_interface.h \
+ /root/cartographer_ws_docker/src/cartographer/cartographer/io/proto_stream_interface.h \
  /usr/include/google/protobuf/message.h \
  /usr/include/google/protobuf/stubs/casts.h \
  /usr/include/google/protobuf/stubs/common.h /usr/include/c++/11/iostream \
@@ -742,7 +742,7 @@ CMakeFiles/cartographer.io.proto_stream_test.dir/cartographer/io/proto_stream_te
  /usr/include/google/protobuf/io/zero_copy_stream_impl_lite.h \
  /usr/include/google/protobuf/stubs/callback.h \
  /usr/include/google/protobuf/stubs/stl_util.h \
- /root/cartographer_ws/build/cartographer/cartographer/mapping/proto/trajectory.pb.h \
+ /root/cartographer_ws_docker/build/cartographer/cartographer/mapping/proto/trajectory.pb.h \
  /usr/include/google/protobuf/generated_message_table_driven.h \
  /usr/include/google/protobuf/map.h \
  /usr/include/google/protobuf/map_type_handler.h \
@@ -753,7 +753,7 @@ CMakeFiles/cartographer.io.proto_stream_test.dir/cartographer/io/proto_stream_te
  /usr/include/google/protobuf/map_field_lite.h \
  /usr/include/google/protobuf/inlined_string_field.h \
  /usr/include/google/protobuf/extension_set.h \
- /root/cartographer_ws/build/cartographer/cartographer/transform/proto/transform.pb.h \
+ /root/cartographer_ws_docker/build/cartographer/cartographer/transform/proto/transform.pb.h \
  /usr/src/googletest/googletest/include/gtest/gtest.h \
  /usr/src/googletest/googletest/include/gtest/internal/gtest-internal.h \
  /usr/src/googletest/googletest/include/gtest/internal/gtest-port.h \

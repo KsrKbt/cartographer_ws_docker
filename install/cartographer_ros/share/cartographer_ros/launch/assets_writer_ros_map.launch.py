@@ -1,1 +1,1 @@
-/root/cartographer_ws/src/cartographer_ros/cartographer_ros/launch/assets_writer_ros_map.launch.py
+/root/cartographer_ws_docker/src/cartographer_ros/cartographer_ros/launch/assets_writer_ros_map.launch.py

@@ -1,1 +1,1 @@
-/root/cartographer_ws/src/cartographer_ros/cartographer_ros_msgs/msg/StatusResponse.msg
+/root/cartographer_ws_docker/src/cartographer_ros/cartographer_ros_msgs/msg/StatusResponse.msg

@@ -1,7 +1,7 @@
 CMakeFiles/cartographer.mapping.value_conversion_tables_test.dir/cartographer/mapping/value_conversion_tables_test.cc.o: \
- /root/cartographer_ws/src/cartographer/cartographer/mapping/value_conversion_tables_test.cc \
+ /root/cartographer_ws_docker/src/cartographer/cartographer/mapping/value_conversion_tables_test.cc \
  /usr/include/stdc-predef.h \
- /root/cartographer_ws/src/cartographer/cartographer/mapping/value_conversion_tables.h \
+ /root/cartographer_ws_docker/src/cartographer/cartographer/mapping/value_conversion_tables.h \
  /usr/include/c++/11/map /usr/include/c++/11/bits/stl_tree.h \
  /usr/include/c++/11/bits/stl_algobase.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
@@ -55,7 +55,7 @@ CMakeFiles/cartographer.mapping.value_conversion_tables_test.dir/cartographer/ma
  /usr/include/c++/11/bits/functional_hash.h \
  /usr/include/c++/11/bits/hash_bytes.h \
  /usr/include/c++/11/bits/vector.tcc \
- /root/cartographer_ws/src/cartographer/cartographer/common/port.h \
+ /root/cartographer_ws_docker/src/cartographer/cartographer/common/port.h \
  /usr/include/boost/iostreams/device/back_inserter.hpp \
  /usr/include/boost/iostreams/detail/ios.hpp \
  /usr/include/boost/config.hpp /usr/include/boost/config/user.hpp \

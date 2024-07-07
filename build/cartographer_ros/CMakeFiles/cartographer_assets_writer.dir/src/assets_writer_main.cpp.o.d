@@ -1,7 +1,7 @@
 CMakeFiles/cartographer_assets_writer.dir/src/assets_writer_main.cpp.o: \
- /root/cartographer_ws/src/cartographer_ros/cartographer_ros/src/assets_writer_main.cpp \
+ /root/cartographer_ws_docker/src/cartographer_ros/cartographer_ros/src/assets_writer_main.cpp \
  /usr/include/stdc-predef.h \
- /root/cartographer_ws/src/cartographer_ros/cartographer_ros/include/cartographer_ros/assets_writer.h \
+ /root/cartographer_ws_docker/src/cartographer_ros/cartographer_ros/include/cartographer_ros/assets_writer.h \
  /usr/include/c++/11/string \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \

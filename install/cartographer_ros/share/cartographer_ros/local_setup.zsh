@@ -1,1 +1,1 @@
-/root/cartographer_ws/build/cartographer_ros/ament_cmake_environment_hooks/local_setup.zsh
+/root/cartographer_ws_docker/build/cartographer_ros/ament_cmake_environment_hooks/local_setup.zsh

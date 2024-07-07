@@ -1,7 +1,7 @@
 CMakeFiles/cartographer.dir/cartographer/io/file_writer.cc.o: \
- /root/cartographer_ws/src/cartographer/cartographer/io/file_writer.cc \
+ /root/cartographer_ws_docker/src/cartographer/cartographer/io/file_writer.cc \
  /usr/include/stdc-predef.h \
- /root/cartographer_ws/src/cartographer/cartographer/io/file_writer.h \
+ /root/cartographer_ws_docker/src/cartographer/cartographer/io/file_writer.h \
  /usr/include/c++/11/fstream /usr/include/c++/11/istream \
  /usr/include/c++/11/ios /usr/include/c++/11/iosfwd \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
@@ -190,7 +190,7 @@ CMakeFiles/cartographer.dir/cartographer/io/file_writer.cc.o: \
  /usr/include/c++/11/backward/auto_ptr.h \
  /usr/include/c++/11/pstl/glue_memory_defs.h \
  /usr/include/c++/11/pstl/execution_defs.h \
- /root/cartographer_ws/src/cartographer/cartographer/common/port.h \
+ /root/cartographer_ws_docker/src/cartographer/cartographer/common/port.h \
  /usr/include/boost/iostreams/device/back_inserter.hpp \
  /usr/include/boost/iostreams/detail/ios.hpp \
  /usr/include/boost/config.hpp /usr/include/boost/config/user.hpp \

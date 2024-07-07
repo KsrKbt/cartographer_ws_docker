@@ -6,15 +6,12 @@ from rclpy.node import Node
 from sensor_msgs.msg import LaserScan
 from nav_msgs.msg import Odometry
 from geometry_msgs.msg import Pose, Twist, Point, Quaternion, Vector3
-from tf2_msgs.msg import TFMessage
-from geometry_msgs.msg import TransformStamped, Pose, Twist, Point, Quaternion, Vector3
 
-class ScanOdomTfRepublisher(Node):
+class ScanOdomRepublisher(Node):
     def __init__(self):
-        super().__init__('scan_odom_tf_republisher')
+        super().__init__('scan_odom_republisher')
         self.scan_publisher = self.create_publisher(LaserScan, '/scan', 10)
         self.odom_publisher = self.create_publisher(Odometry, '/odom', 10)
-        self.tf_publisher = self.create_publisher(TFMessage, '/tf', 10)
         self.get_logger().info('Republisher node initialized')
 
     def publish_scan(self, scan_data):
@@ -65,28 +62,6 @@ class ScanOdomTfRepublisher(Node):
         self.odom_publisher.publish(msg)
         self.get_logger().info('Published Odometry message')
 
-    def publish_tf(self, tf_data):
-        msg = TFMessage()
-        for transform in tf_data['transforms']:
-            tf_stamped = TransformStamped()
-            tf_stamped.header.stamp = self.get_clock().now().to_msg()
-            tf_stamped.header.frame_id = transform['header']['frame_id']
-            tf_stamped.child_frame_id = transform['child_frame_id']
-            
-            tf_stamped.transform.translation.x = float(transform['transform']['translation']['x'])
-            tf_stamped.transform.translation.y = float(transform['transform']['translation']['y'])
-            tf_stamped.transform.translation.z = float(transform['transform']['translation']['z'])
-            
-            tf_stamped.transform.rotation.x = float(transform['transform']['rotation']['x'])
-            tf_stamped.transform.rotation.y = float(transform['transform']['rotation']['y'])
-            tf_stamped.transform.rotation.z = float(transform['transform']['rotation']['z'])
-            tf_stamped.transform.rotation.w = float(transform['transform']['rotation']['w'])
-            
-            msg.transforms.append(tf_stamped)
-        
-        self.tf_publisher.publish(msg)
-        self.get_logger().info('Published TF message')
-        
 def on_message(ws, message, node):
     try:
         data = json.loads(message)
@@ -96,8 +71,6 @@ def on_message(ws, message, node):
                 node.publish_scan(data['msg'])
             elif data['topic'] == '/odom':
                 node.publish_odom(data['msg'])
-            elif data['topic'] == '/tf':
-                node.publish_tf(data['msg'])
     except Exception as e:
         node.get_logger().error(f"Error processing message: {e}")
 
@@ -118,20 +91,15 @@ def on_open(ws):
             "op": "subscribe",
             "topic": "/odom",
             "type": "nav_msgs/msg/Odometry"
-        },
-        {
-            "op": "subscribe",
-            "topic": "/tf",
-            "type": "tf2_msgs/msg/TFMessage"
         }
     ]
     for msg in subscribe_msgs:
         ws.send(json.dumps(msg))
-    print("Connection opened and subscribed to /scan, /odom, and /tf topics")
+    print("Connection opened and subscribed to /scan and /odom topics")
 
 def main(args=None):
     rclpy.init(args=args)
-    node = ScanOdomTfRepublisher()
+    node = ScanOdomRepublisher()
 
     websocket.enableTrace(True)
     ws = websocket.WebSocketApp("ws://localhost:9090",

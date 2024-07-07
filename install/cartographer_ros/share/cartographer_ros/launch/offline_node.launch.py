@@ -1,1 +1,1 @@
-/root/cartographer_ws/src/cartographer_ros/cartographer_ros/launch/offline_node.launch.py
+/root/cartographer_ws_docker/src/cartographer_ros/cartographer_ros/launch/offline_node.launch.py

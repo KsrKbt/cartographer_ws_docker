@@ -1,1 +1,1 @@
-/root/cartographer_ws/src/cartographer_ros/cartographer_ros/include/cartographer_ros/assets_writer.h
+/root/cartographer_ws_docker/src/cartographer_ros/cartographer_ros/include/cartographer_ros/assets_writer.h

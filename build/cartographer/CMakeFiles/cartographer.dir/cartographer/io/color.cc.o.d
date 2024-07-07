@@ -1,7 +1,7 @@
 CMakeFiles/cartographer.dir/cartographer/io/color.cc.o: \
- /root/cartographer_ws/src/cartographer/cartographer/io/color.cc \
+ /root/cartographer_ws_docker/src/cartographer/cartographer/io/color.cc \
  /usr/include/stdc-predef.h \
- /root/cartographer_ws/src/cartographer/cartographer/io/color.h \
+ /root/cartographer_ws_docker/src/cartographer/cartographer/io/color.h \
  /usr/include/c++/11/array /usr/include/c++/11/utility \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
@@ -31,7 +31,7 @@ CMakeFiles/cartographer.dir/cartographer/io/color.cc.o: \
  /usr/include/c++/11/bits/ptr_traits.h /usr/include/c++/11/debug/debug.h \
  /usr/include/c++/11/bits/predefined_ops.h \
  /usr/include/c++/11/bits/range_access.h \
- /root/cartographer_ws/src/cartographer/cartographer/common/math.h \
+ /root/cartographer_ws_docker/src/cartographer/cartographer/common/math.h \
  /usr/include/c++/11/cmath /usr/include/math.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/x86_64-linux-gnu/bits/types.h \
@@ -349,7 +349,7 @@ CMakeFiles/cartographer.dir/cartographer/io/color.cc.o: \
  /usr/include/eigen3/Eigen/src/Core/StlIterators.h \
  /usr/include/eigen3/Eigen/src/Core/GlobalFunctions.h \
  /usr/include/eigen3/Eigen/src/Core/util/ReenableStupidWarnings.h \
- /root/cartographer_ws/src/cartographer/cartographer/common/port.h \
+ /root/cartographer_ws_docker/src/cartographer/cartographer/common/port.h \
  /usr/include/boost/iostreams/device/back_inserter.hpp \
  /usr/include/boost/iostreams/detail/ios.hpp \
  /usr/include/boost/config.hpp /usr/include/boost/config/user.hpp \

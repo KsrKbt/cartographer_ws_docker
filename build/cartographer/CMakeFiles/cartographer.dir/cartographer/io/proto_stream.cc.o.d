@@ -1,7 +1,7 @@
 CMakeFiles/cartographer.dir/cartographer/io/proto_stream.cc.o: \
- /root/cartographer_ws/src/cartographer/cartographer/io/proto_stream.cc \
+ /root/cartographer_ws_docker/src/cartographer/cartographer/io/proto_stream.cc \
  /usr/include/stdc-predef.h \
- /root/cartographer_ws/src/cartographer/cartographer/io/proto_stream.h \
+ /root/cartographer_ws_docker/src/cartographer/cartographer/io/proto_stream.h \
  /usr/include/c++/11/fstream /usr/include/c++/11/istream \
  /usr/include/c++/11/ios /usr/include/c++/11/iosfwd \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
@@ -156,7 +156,7 @@ CMakeFiles/cartographer.dir/cartographer/io/proto_stream.cc.o: \
  /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h \
  /usr/include/c++/11/bits/fstream.tcc \
- /root/cartographer_ws/src/cartographer/cartographer/common/port.h \
+ /root/cartographer_ws_docker/src/cartographer/cartographer/common/port.h \
  /usr/include/boost/iostreams/device/back_inserter.hpp \
  /usr/include/boost/iostreams/detail/ios.hpp \
  /usr/include/boost/config.hpp /usr/include/boost/config/user.hpp \
@@ -670,7 +670,7 @@ CMakeFiles/cartographer.dir/cartographer/io/proto_stream.cc.o: \
  /usr/include/c++/11/tr1/poly_hermite.tcc \
  /usr/include/c++/11/tr1/poly_laguerre.tcc \
  /usr/include/c++/11/tr1/riemann_zeta.tcc \
- /root/cartographer_ws/src/cartographer/cartographer/io/proto_stream_interface.h \
+ /root/cartographer_ws_docker/src/cartographer/cartographer/io/proto_stream_interface.h \
  /usr/include/google/protobuf/message.h \
  /usr/include/google/protobuf/stubs/casts.h \
  /usr/include/google/protobuf/stubs/common.h /usr/include/c++/11/iostream \

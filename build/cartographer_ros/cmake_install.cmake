@@ -1,8 +1,8 @@
-# Install script for directory: /root/cartographer_ws/src/cartographer_ros/cartographer_ros
+# Install script for directory: /root/cartographer_ws_docker/src/cartographer_ros/cartographer_ros
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/root/cartographer_ws/install/cartographer_ros")
+  set(CMAKE_INSTALL_PREFIX "/root/cartographer_ws_docker/install/cartographer_ros")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -43,7 +43,7 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  include("/root/cartographer_ws/build/cartographer_ros/ament_cmake_symlink_install/ament_cmake_symlink_install.cmake")
+  include("/root/cartographer_ws_docker/build/cartographer_ros/ament_cmake_symlink_install/ament_cmake_symlink_install.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -54,5 +54,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/root/cartographer_ws/build/cartographer_ros/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/root/cartographer_ws_docker/build/cartographer_ros/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

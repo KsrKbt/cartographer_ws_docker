@@ -1,7 +1,7 @@
-/root/cartographer_ws/install/cartographer_rviz/lib/libcartographer_rviz.so
-/root/cartographer_ws/install/cartographer_rviz/share/cartographer_rviz/ogre_media/materials/glsl120/glsl120.program
-/root/cartographer_ws/install/cartographer_rviz/share/cartographer_rviz/ogre_media/materials/glsl120/submap.vert
-/root/cartographer_ws/install/cartographer_rviz/share/cartographer_rviz/ogre_media/materials/glsl120/submap.frag
-/root/cartographer_ws/install/cartographer_rviz/share/cartographer_rviz/ogre_media/materials/scripts/submap.material
-/root/cartographer_ws/install/cartographer_rviz/share/cartographer_rviz/cmake/cartographer_rvizExport.cmake
-/root/cartographer_ws/install/cartographer_rviz/share/cartographer_rviz/cmake/cartographer_rvizExport-release.cmake
+/root/cartographer_ws_docker/install/cartographer_rviz/lib/libcartographer_rviz.so
+/root/cartographer_ws_docker/install/cartographer_rviz/share/cartographer_rviz/ogre_media/materials/glsl120/glsl120.program
+/root/cartographer_ws_docker/install/cartographer_rviz/share/cartographer_rviz/ogre_media/materials/glsl120/submap.vert
+/root/cartographer_ws_docker/install/cartographer_rviz/share/cartographer_rviz/ogre_media/materials/glsl120/submap.frag
+/root/cartographer_ws_docker/install/cartographer_rviz/share/cartographer_rviz/ogre_media/materials/scripts/submap.material
+/root/cartographer_ws_docker/install/cartographer_rviz/share/cartographer_rviz/cmake/cartographer_rvizExport.cmake
+/root/cartographer_ws_docker/install/cartographer_rviz/share/cartographer_rviz/cmake/cartographer_rvizExport-release.cmake

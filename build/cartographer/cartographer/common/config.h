@@ -21,8 +21,8 @@ namespace cartographer {
 namespace common {
 
 constexpr char kConfigurationFilesDirectory[] =
-    "/root/cartographer_ws/install/cartographer/share/cartographer/configuration_files";
-constexpr char kSourceDirectory[] = "/root/cartographer_ws/src/cartographer";
+    "/root/cartographer_ws_docker/install/cartographer/share/cartographer/configuration_files";
+constexpr char kSourceDirectory[] = "/root/cartographer_ws_docker/src/cartographer";
 
 }  // namespace common
 }  // namespace cartographer
