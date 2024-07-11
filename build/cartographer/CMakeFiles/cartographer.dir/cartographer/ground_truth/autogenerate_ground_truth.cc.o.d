@@ -1,8 +1,8 @@
 CMakeFiles/cartographer.dir/cartographer/ground_truth/autogenerate_ground_truth.cc.o: \
- /root/cartographer_ws_docker/src/cartographer/cartographer/ground_truth/autogenerate_ground_truth.cc \
+ /home/user/cartographer_ws_docker/src/cartographer/cartographer/ground_truth/autogenerate_ground_truth.cc \
  /usr/include/stdc-predef.h \
- /root/cartographer_ws_docker/src/cartographer/cartographer/ground_truth/autogenerate_ground_truth.h \
- /root/cartographer_ws_docker/build/cartographer/cartographer/ground_truth/proto/relations.pb.h \
+ /home/user/cartographer_ws_docker/src/cartographer/cartographer/ground_truth/autogenerate_ground_truth.h \
+ /home/user/cartographer_ws_docker/build/cartographer/cartographer/ground_truth/proto/relations.pb.h \
  /usr/include/c++/11/limits \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
@@ -292,10 +292,10 @@ CMakeFiles/cartographer.dir/cartographer/ground_truth/autogenerate_ground_truth.
  /usr/include/google/protobuf/stubs/stl_util.h \
  /usr/include/google/protobuf/message.h \
  /usr/include/google/protobuf/extension_set.h /usr/include/c++/11/cassert \
- /root/cartographer_ws_docker/build/cartographer/cartographer/transform/proto/transform.pb.h \
- /root/cartographer_ws_docker/build/cartographer/cartographer/mapping/proto/pose_graph.pb.h \
- /root/cartographer_ws_docker/build/cartographer/cartographer/mapping/proto/trajectory.pb.h \
- /root/cartographer_ws_docker/src/cartographer/cartographer/transform/transform.h \
+ /home/user/cartographer_ws_docker/build/cartographer/cartographer/transform/proto/transform.pb.h \
+ /home/user/cartographer_ws_docker/build/cartographer/cartographer/mapping/proto/pose_graph.pb.h \
+ /home/user/cartographer_ws_docker/build/cartographer/cartographer/mapping/proto/trajectory.pb.h \
+ /home/user/cartographer_ws_docker/src/cartographer/cartographer/transform/transform.h \
  /usr/include/c++/11/cmath /usr/include/math.h \
  /usr/include/x86_64-linux-gnu/bits/math-vector.h \
  /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h \
@@ -492,8 +492,8 @@ CMakeFiles/cartographer.dir/cartographer/ground_truth/autogenerate_ground_truth.
  /usr/include/eigen3/Eigen/src/Geometry/AlignedBox.h \
  /usr/include/eigen3/Eigen/src/Geometry/Umeyama.h \
  /usr/include/eigen3/Eigen/src/Geometry/arch/Geometry_SIMD.h \
- /root/cartographer_ws_docker/src/cartographer/cartographer/common/math.h \
- /root/cartographer_ws_docker/src/cartographer/cartographer/common/port.h \
+ /home/user/cartographer_ws_docker/src/cartographer/cartographer/common/math.h \
+ /home/user/cartographer_ws_docker/src/cartographer/cartographer/common/port.h \
  /usr/include/boost/iostreams/device/back_inserter.hpp \
  /usr/include/boost/iostreams/detail/ios.hpp \
  /usr/include/boost/config.hpp /usr/include/boost/config/user.hpp \
@@ -991,7 +991,7 @@ CMakeFiles/cartographer.dir/cartographer/ground_truth/autogenerate_ground_truth.
  /usr/include/ceres/numeric_diff_cost_function.h \
  /usr/include/ceres/ordered_groups.h /usr/include/ceres/problem.h \
  /usr/include/ceres/solver.h /usr/include/ceres/version.h \
- /root/cartographer_ws_docker/src/cartographer/cartographer/transform/rigid_transform.h \
+ /home/user/cartographer_ws_docker/src/cartographer/cartographer/transform/rigid_transform.h \
  /usr/include/absl/strings/substitute.h /usr/include/absl/base/macros.h \
  /usr/include/absl/base/attributes.h /usr/include/absl/base/config.h \
  /usr/include/absl/base/options.h /usr/include/c++/11/ciso646 \
@@ -1016,8 +1016,8 @@ CMakeFiles/cartographer.dir/cartographer/ground_truth/autogenerate_ground_truth.
  /usr/include/absl/base/log_severity.h \
  /usr/include/absl/strings/internal/str_split_internal.h \
  /usr/include/absl/strings/strip.h /usr/include/absl/strings/match.h \
- /root/cartographer_ws_docker/src/cartographer/cartographer/common/lua_parameter_dictionary.h \
- /root/cartographer_ws_docker/src/cartographer/cartographer/common/lua.h \
+ /home/user/cartographer_ws_docker/src/cartographer/cartographer/common/lua_parameter_dictionary.h \
+ /home/user/cartographer_ws_docker/src/cartographer/cartographer/common/lua.h \
  /usr/include/lua5.2/lua.hpp /usr/include/lua5.2/lua.h \
  /usr/include/lua5.2/luaconf.h \
  /usr/include/x86_64-linux-gnu/lua5.2-deb-multiarch.h \

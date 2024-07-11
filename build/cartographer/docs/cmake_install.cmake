@@ -1,8 +1,8 @@
-# Install script for directory: /root/cartographer_ws_docker/src/cartographer/docs
+# Install script for directory: /home/user/cartographer_ws_docker/src/cartographer/docs
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/root/cartographer_ws_docker/install/cartographer")
+  set(CMAKE_INSTALL_PREFIX "/home/user/cartographer_ws_docker/install/cartographer")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 

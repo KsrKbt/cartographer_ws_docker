@@ -44,7 +44,7 @@ class CartographerSubscriberRepublisher(Node):
         )
 
         # WebSocket接続の設定 (IPアドレスを実際のDocker ホストのIPに変更してください)
-        self.ws = websocket.WebSocketApp("ws://172.17.0.1:9090",
+        self.ws = websocket.WebSocketApp("ws://192.168.64.193:9090",
                                          on_open=self.on_open,
                                          on_message=self.on_message,
                                          on_error=self.on_error,

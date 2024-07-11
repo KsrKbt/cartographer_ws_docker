@@ -12,7 +12,7 @@ options = {
   use_odometry = true,
   use_nav_sat = false,
   use_landmarks = false,
-  publish_frame_projected_to_2d = false,
+  publish_frame_projected_to_2d = true,
   num_laser_scans = 1,
   num_multi_echo_laser_scans = 0,
   num_subdivisions_per_laser_scan = 1,
@@ -27,9 +27,12 @@ options = {
   imu_sampling_ratio = 1.,
   landmarks_sampling_ratio = 1.,
 }
-
+TRAJECTORY_BUILDER.use_imu_data = false
 MAP_BUILDER.use_trajectory_builder_2d = true
 
 TRAJECTORY_BUILDER_2D.num_accumulated_range_data = 1
+
+POSE_GRAPH.optimize_every_n_nodes = 90
+POSE_GRAPH.constraint_builder.sampling_ratio = 0.1
 
 return options

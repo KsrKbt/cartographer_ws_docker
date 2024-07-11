@@ -102,7 +102,7 @@ def main(args=None):
     node = ScanOdomRepublisher()
 
     websocket.enableTrace(True)
-    ws = websocket.WebSocketApp("ws://localhost:9090",
+    ws = websocket.WebSocketApp("ws://192.168.64.193:9090",
                                 on_open=on_open,
                                 on_message=lambda ws, message: on_message(ws, message, node),
                                 on_error=on_error,

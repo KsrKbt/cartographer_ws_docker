@@ -1,1 +1,1 @@
-/root/cartographer_ws_docker/install/cartographer_ros:/root/cartographer_ws_docker/install/cartographer_ros_msgs:/opt/ros/humble
+/home/user/cartographer_ws_docker/install/cartographer_rviz:/home/user/cartographer_ws_docker/install/cartographer_ros:/home/user/cartographer_ws_docker/install/cartographer_ros_msgs:/home/user/doly_ws/install/turtlebot3_multi_robot:/opt/ros/humble

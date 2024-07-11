@@ -1,1 +1,1 @@
-/root/cartographer_ws_docker/build/cartographer_rviz/ament_cmake_environment_hooks/local_setup.sh
+/home/user/cartographer_ws_docker/build/cartographer_rviz/ament_cmake_environment_hooks/local_setup.sh

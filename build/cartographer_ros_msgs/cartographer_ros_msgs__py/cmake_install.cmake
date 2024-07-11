@@ -1,8 +1,8 @@
-# Install script for directory: /root/cartographer_ws_docker/build/cartographer_ros_msgs/cartographer_ros_msgs__py
+# Install script for directory: /home/user/cartographer_ws_docker/build/cartographer_ros_msgs/cartographer_ros_msgs__py
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/root/cartographer_ws_docker/install/cartographer_ros_msgs")
+  set(CMAKE_INSTALL_PREFIX "/home/user/cartographer_ws_docker/install/cartographer_ros_msgs")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
