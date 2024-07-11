@@ -346,3 +346,18 @@ class CartographerSubscriberRepublisher(Node):
             "data": list(msg.data),  # バイナリデータをリストに変換
             "is_dense": msg.is_dense
         }
+def main(args=None):
+    rclpy.init(args=args)
+    node = CartographerSubscriberRepublisher()
+    
+    try:
+        rclpy.spin(node)
+    except KeyboardInterrupt:
+        pass
+    finally:
+        node.ws.close()
+        node.destroy_node()
+        rclpy.shutdown()
+
+if __name__ == '__main__':
+    main()
