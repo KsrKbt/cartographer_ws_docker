@@ -6,14 +6,12 @@ from rclpy.node import Node
 from sensor_msgs.msg import LaserScan
 from nav_msgs.msg import Odometry
 from geometry_msgs.msg import Pose, Twist, Point, Quaternion, Vector3
-from rcl_interfaces.msg import ParameterEvent, Parameter, ParameterValue, ParameterType
 
 class ScanOdomRepublisher(Node):
     def __init__(self):
         super().__init__('scan_odom_republisher')
         self.scan_publisher = self.create_publisher(LaserScan, '/scan', 10)
         self.odom_publisher = self.create_publisher(Odometry, '/odom', 10)
-        self.parameter_events_publisher = self.create_publisher(ParameterEvent, '/parameter_events', 10)
         self.get_logger().info('Republisher node initialized')
 
     def publish_scan(self, scan_data):
@@ -64,45 +62,6 @@ class ScanOdomRepublisher(Node):
         self.odom_publisher.publish(msg)
         self.get_logger().info('Published Odometry message')
 
-    def publish_parameter_event(self, event_data):
-        msg = ParameterEvent()
-        msg.stamp = self.get_clock().now().to_msg()
-        msg.node = event_data['node']
-        
-        for new_param in event_data.get('new_parameters', []):
-            param = Parameter()
-            param.name = new_param['name']
-            param.value = self.convert_parameter_value(new_param['value'])
-            msg.new_parameters.append(param)
-        
-        for changed_param in event_data.get('changed_parameters', []):
-            param = Parameter()
-            param.name = changed_param['name']
-            param.value = self.convert_parameter_value(changed_param['value'])
-            msg.changed_parameters.append(param)
-        
-        msg.deleted_parameters = [Parameter(name=p['name']) for p in event_data.get('deleted_parameters', [])]
-        
-        self.parameter_events_publisher.publish(msg)
-        self.get_logger().info('Published ParameterEvent message')
-
-    def convert_parameter_value(self, value):
-        param_value = ParameterValue()
-        if isinstance(value, bool):
-            param_value.type = ParameterType.PARAMETER_BOOL
-            param_value.bool_value = value
-        elif isinstance(value, int):
-            param_value.type = ParameterType.PARAMETER_INTEGER
-            param_value.integer_value = value
-        elif isinstance(value, float):
-            param_value.type = ParameterType.PARAMETER_DOUBLE
-            param_value.double_value = value
-        elif isinstance(value, str):
-            param_value.type = ParameterType.PARAMETER_STRING
-            param_value.string_value = value
-        # Add more type conversions as needed
-        return param_value
-
 def on_message(ws, message, node):
     try:
         data = json.loads(message)
@@ -112,8 +71,6 @@ def on_message(ws, message, node):
                 node.publish_scan(data['msg'])
             elif data['topic'] == '/odom':
                 node.publish_odom(data['msg'])
-            elif data['topic'] == '/parameter_events':
-                node.publish_parameter_event(data['msg'])
     except Exception as e:
         node.get_logger().error(f"Error processing message: {e}")
 
@@ -134,23 +91,18 @@ def on_open(ws):
             "op": "subscribe",
             "topic": "/odom",
             "type": "nav_msgs/msg/Odometry"
-        },
-        {
-            "op": "subscribe",
-            "topic": "/parameter_events",
-            "type": "rcl_interfaces/msg/ParameterEvent"
         }
     ]
     for msg in subscribe_msgs:
         ws.send(json.dumps(msg))
-    print("Connection opened and subscribed to /scan, /odom, and /parameter_events topics")
+    print("Connection opened and subscribed to /scan and /odom topics")
 
 def main(args=None):
     rclpy.init(args=args)
     node = ScanOdomRepublisher()
 
     websocket.enableTrace(True)
-    ws = websocket.WebSocketApp("ws://192.168.64.58:9090",
+    ws = websocket.WebSocketApp("ws://192.168.64.193:9090",
                                 on_open=on_open,
                                 on_message=lambda ws, message: on_message(ws, message, node),
                                 on_error=on_error,
