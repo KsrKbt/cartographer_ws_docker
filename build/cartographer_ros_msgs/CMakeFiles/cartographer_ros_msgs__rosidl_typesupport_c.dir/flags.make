@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = -DRCUTILS_ENABLE_FAULT_INJECTION -DROSIDL_GENERATOR_C_BUILDING_DLL_cartographer_ros_msgs -DROS_PACKAGE_NAME=\"cartographer_ros_msgs\"
 
-CXX_INCLUDES = -I/home/user/cartographer_ws_docker/build/cartographer_ros_msgs/rosidl_generator_c -isystem /opt/ros/humble/include/builtin_interfaces -isystem /opt/ros/humble/include/rosidl_runtime_c -isystem /opt/ros/humble/include/rcutils -isystem /opt/ros/humble/include/rosidl_typesupport_interface -isystem /opt/ros/humble/include/geometry_msgs -isystem /opt/ros/humble/include/std_msgs -isystem /opt/ros/humble/include/rosidl_typesupport_c
+CXX_INCLUDES = -I/home/user/cartographer_ws_docker/build/cartographer_ros_msgs/rosidl_generator_c -isystem /home/user/tracing_ws/install/builtin_interfaces/include/builtin_interfaces -isystem /home/user/tracing_ws/install/rosidl_runtime_c/include/rosidl_runtime_c -isystem /home/user/tracing_ws/install/rcutils/include/rcutils -isystem /home/user/tracing_ws/install/rosidl_typesupport_interface/include/rosidl_typesupport_interface -isystem /home/user/tracing_ws/install/geometry_msgs/include/geometry_msgs -isystem /home/user/tracing_ws/install/std_msgs/include/std_msgs -isystem /home/user/tracing_ws/install/rosidl_typesupport_c/include/rosidl_typesupport_c
 
 CXX_FLAGS =  -Wall -Wextra -Wpedantic -fPIC -Wall -std=gnu++14
 

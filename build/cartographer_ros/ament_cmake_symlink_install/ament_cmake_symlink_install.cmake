@@ -322,8 +322,8 @@ ament_cmake_symlink_install_directory("/home/user/cartographer_ws_docker/src/car
 # install(DIRECTORY "configuration_files" "urdf" "launch" "DESTINATION" "share/cartographer_ros/")
 ament_cmake_symlink_install_directory("/home/user/cartographer_ws_docker/src/cartographer_ros/cartographer_ros" DIRECTORY "configuration_files" "urdf" "launch" "DESTINATION" "share/cartographer_ros/")
 
-# install(FILES "/opt/ros/humble/lib/python3.10/site-packages/ament_package/template/environment_hook/library_path.sh" "DESTINATION" "share/cartographer_ros/environment")
-ament_cmake_symlink_install_files("/home/user/cartographer_ws_docker/src/cartographer_ros/cartographer_ros" FILES "/opt/ros/humble/lib/python3.10/site-packages/ament_package/template/environment_hook/library_path.sh" "DESTINATION" "share/cartographer_ros/environment")
+# install(FILES "/home/user/tracing_ws/install/ament_package/lib/python3.10/site-packages/ament_package/template/environment_hook/library_path.sh" "DESTINATION" "share/cartographer_ros/environment")
+ament_cmake_symlink_install_files("/home/user/cartographer_ws_docker/src/cartographer_ros/cartographer_ros" FILES "/home/user/tracing_ws/install/ament_package/lib/python3.10/site-packages/ament_package/template/environment_hook/library_path.sh" "DESTINATION" "share/cartographer_ros/environment")
 
 # install(FILES "/home/user/cartographer_ws_docker/build/cartographer_ros/ament_cmake_environment_hooks/library_path.dsv" "DESTINATION" "share/cartographer_ros/environment")
 ament_cmake_symlink_install_files("/home/user/cartographer_ws_docker/src/cartographer_ros/cartographer_ros" FILES "/home/user/cartographer_ws_docker/build/cartographer_ros/ament_cmake_environment_hooks/library_path.dsv" "DESTINATION" "share/cartographer_ros/environment")
@@ -334,14 +334,14 @@ ament_cmake_symlink_install_files("/home/user/cartographer_ws_docker/src/cartogr
 # install(FILES "/home/user/cartographer_ws_docker/build/cartographer_ros/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/cartographer_ros" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
 ament_cmake_symlink_install_files("/home/user/cartographer_ws_docker/src/cartographer_ros/cartographer_ros" FILES "/home/user/cartographer_ws_docker/build/cartographer_ros/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/cartographer_ros" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
 
-# install(FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/cartographer_ros/environment")
-ament_cmake_symlink_install_files("/home/user/cartographer_ws_docker/src/cartographer_ros/cartographer_ros" FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/cartographer_ros/environment")
+# install(FILES "/home/user/tracing_ws/install/ament_cmake_core/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/cartographer_ros/environment")
+ament_cmake_symlink_install_files("/home/user/cartographer_ws_docker/src/cartographer_ros/cartographer_ros" FILES "/home/user/tracing_ws/install/ament_cmake_core/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/cartographer_ros/environment")
 
 # install(FILES "/home/user/cartographer_ws_docker/build/cartographer_ros/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/cartographer_ros/environment")
 ament_cmake_symlink_install_files("/home/user/cartographer_ws_docker/src/cartographer_ros/cartographer_ros" FILES "/home/user/cartographer_ws_docker/build/cartographer_ros/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/cartographer_ros/environment")
 
-# install(FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/cartographer_ros/environment")
-ament_cmake_symlink_install_files("/home/user/cartographer_ws_docker/src/cartographer_ros/cartographer_ros" FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/cartographer_ros/environment")
+# install(FILES "/home/user/tracing_ws/install/ament_cmake_core/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/cartographer_ros/environment")
+ament_cmake_symlink_install_files("/home/user/cartographer_ws_docker/src/cartographer_ros/cartographer_ros" FILES "/home/user/tracing_ws/install/ament_cmake_core/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/cartographer_ros/environment")
 
 # install(FILES "/home/user/cartographer_ws_docker/build/cartographer_ros/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/cartographer_ros/environment")
 ament_cmake_symlink_install_files("/home/user/cartographer_ws_docker/src/cartographer_ros/cartographer_ros" FILES "/home/user/cartographer_ws_docker/build/cartographer_ros/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/cartographer_ros/environment")

@@ -48,7 +48,7 @@ class CartographerSubscriberRepublisher(Node):
         self.trajectory_node_list_subscription = self.create_subscription(
             MarkerArray, '/trajectory_node_list', self.trajectory_node_list_callback, qos_profile)
 
-        self.ws = websocket.WebSocketApp("ws://192.168.64.58:9090",
+        self.ws = websocket.WebSocketApp("ws://192.168.1.23:9090",
                                          on_open=self.on_open,
                                          on_message=self.on_message,
                                          on_error=self.on_error,
@@ -346,6 +346,18 @@ class CartographerSubscriberRepublisher(Node):
             "data": list(msg.data),  # バイナリデータをリストに変換
             "is_dense": msg.is_dense
         }
+    def on_open(self, ws):
+        self.get_logger().info("WebSocket connection opened")
+
+    def on_message(self, ws, message):
+        self.get_logger().info(f"Received message from WebSocket: {message}")
+
+    def on_error(self, ws, error):
+        self.get_logger().error(f"WebSocket error: {error}")
+
+    def on_close(self, ws, close_status_code, close_msg):
+        self.get_logger().info(f"WebSocket connection closed: {close_status_code} - {close_msg}")
+        
 def main(args=None):
     rclpy.init(args=args)
     node = CartographerSubscriberRepublisher()
