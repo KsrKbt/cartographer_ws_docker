@@ -4,7 +4,7 @@ from tf2_msgs.msg import TFMessage
 from cartographer_ros_msgs.msg import SubmapList
 from visualization_msgs.msg import MarkerArray
 from sensor_msgs.msg import PointCloud2
-from rcl_interfaces.msg import ParameterEvent, Log
+from rcl_interfaces.msg import ParameterEvent, Log, ParameterType
 from rclpy.qos import QoSProfile, ReliabilityPolicy, HistoryPolicy, DurabilityPolicy
 import websocket
 import json
@@ -48,7 +48,7 @@ class CartographerSubscriberRepublisher(Node):
         self.trajectory_node_list_subscription = self.create_subscription(
             MarkerArray, '/trajectory_node_list', self.trajectory_node_list_callback, qos_profile)
 
-        self.ws = websocket.WebSocketApp("ws://192.168.1.23:9090",
+        self.ws = websocket.WebSocketApp("ws://192.168.64.58:9090",
                                          on_open=self.on_open,
                                          on_message=self.on_message,
                                          on_error=self.on_error,
@@ -140,7 +140,7 @@ class CartographerSubscriberRepublisher(Node):
         }
         try:
             json_data = json.dumps(data)
-            self.get_logger().info(f'Sending to rosbridge: {json_data}')
+            self.get_logger().debug(f'Sending to rosbridge: {json_data}')  # デバッグ用ログ
             self.ws.send(json_data)
             self.get_logger().info(f'Published {topic} message to rosbridge.')
         except Exception as e:
@@ -260,6 +260,20 @@ class CartographerSubscriberRepublisher(Node):
         }
 
     def parameter_event_to_dict(self, msg):
+        def value_to_dict(value):
+            return {
+                "type": value.type,
+                "bool_value": value.bool_value,
+                "integer_value": value.integer_value,
+                "double_value": value.double_value,
+                "string_value": value.string_value,
+                "byte_array_value": list(value.byte_array_value) if value.byte_array_value else [],
+                "bool_array_value": list(value.bool_array_value) if value.bool_array_value else [],
+                "integer_array_value": list(value.integer_array_value) if value.integer_array_value else [],
+                "double_array_value": list(value.double_array_value) if value.double_array_value else [],
+                "string_array_value": list(value.string_array_value) if value.string_array_value else []
+            }
+
         return {
             "stamp": {
                 "sec": msg.stamp.sec,
@@ -269,13 +283,13 @@ class CartographerSubscriberRepublisher(Node):
             "new_parameters": [
                 {
                     "name": p.name,
-                    "value": self.parameter_value_to_dict(p.value)
+                    "value": value_to_dict(p.value)
                 } for p in msg.new_parameters
             ],
             "changed_parameters": [
                 {
                     "name": p.name,
-                    "value": self.parameter_value_to_dict(p.value)
+                    "value": value_to_dict(p.value)
                 } for p in msg.changed_parameters
             ],
             "deleted_parameters": [
@@ -287,25 +301,25 @@ class CartographerSubscriberRepublisher(Node):
 
     def parameter_value_to_dict(self, value):
         if value.type == ParameterType.PARAMETER_BOOL:
-            return {"type": "bool", "value": value.bool_value}
+            return {"type": ParameterType.PARAMETER_BOOL, "value": value.bool_value}
         elif value.type == ParameterType.PARAMETER_INTEGER:
-            return {"type": "integer", "value": value.integer_value}
+            return {"type": ParameterType.PARAMETER_INTEGER, "value": value.integer_value}
         elif value.type == ParameterType.PARAMETER_DOUBLE:
-            return {"type": "double", "value": value.double_value}
+            return {"type": ParameterType.PARAMETER_DOUBLE, "value": value.double_value}
         elif value.type == ParameterType.PARAMETER_STRING:
-            return {"type": "string", "value": value.string_value}
+            return {"type": ParameterType.PARAMETER_STRING, "value": value.string_value}
         elif value.type == ParameterType.PARAMETER_BYTE_ARRAY:
-            return {"type": "byte_array", "value": list(value.byte_array_value)}
+            return {"type": ParameterType.PARAMETER_BYTE_ARRAY, "value": list(value.byte_array_value)}
         elif value.type == ParameterType.PARAMETER_BOOL_ARRAY:
-            return {"type": "bool_array", "value": list(value.bool_array_value)}
+            return {"type": ParameterType.PARAMETER_BOOL_ARRAY, "value": list(value.bool_array_value)}
         elif value.type == ParameterType.PARAMETER_INTEGER_ARRAY:
-            return {"type": "integer_array", "value": list(value.integer_array_value)}
+            return {"type": ParameterType.PARAMETER_INTEGER_ARRAY, "value": list(value.integer_array_value)}
         elif value.type == ParameterType.PARAMETER_DOUBLE_ARRAY:
-            return {"type": "double_array", "value": list(value.double_array_value)}
+            return {"type": ParameterType.PARAMETER_DOUBLE_ARRAY, "value": list(value.double_array_value)}
         elif value.type == ParameterType.PARAMETER_STRING_ARRAY:
-            return {"type": "string_array", "value": list(value.string_array_value)}
+            return {"type": ParameterType.PARAMETER_STRING_ARRAY, "value": list(value.string_array_value)}
         else:
-            return {"type": "unknown", "value": None}
+            return {"type": ParameterType.PARAMETER_NOT_SET, "value": None}
 
     def log_to_dict(self, msg):
         return {

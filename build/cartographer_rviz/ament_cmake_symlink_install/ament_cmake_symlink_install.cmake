@@ -316,8 +316,8 @@ ament_cmake_symlink_install_files("/home/user/cartographer_ws_docker/src/cartogr
 # install(DIRECTORY "include/" "DESTINATION" "include/")
 ament_cmake_symlink_install_directory("/home/user/cartographer_ws_docker/src/cartographer_ros/cartographer_rviz" DIRECTORY "include/" "DESTINATION" "include/")
 
-# install(FILES "/home/user/tracing_ws/install/ament_package/lib/python3.10/site-packages/ament_package/template/environment_hook/library_path.sh" "DESTINATION" "share/cartographer_rviz/environment")
-ament_cmake_symlink_install_files("/home/user/cartographer_ws_docker/src/cartographer_ros/cartographer_rviz" FILES "/home/user/tracing_ws/install/ament_package/lib/python3.10/site-packages/ament_package/template/environment_hook/library_path.sh" "DESTINATION" "share/cartographer_rviz/environment")
+# install(FILES "/opt/ros/humble/lib/python3.10/site-packages/ament_package/template/environment_hook/library_path.sh" "DESTINATION" "share/cartographer_rviz/environment")
+ament_cmake_symlink_install_files("/home/user/cartographer_ws_docker/src/cartographer_ros/cartographer_rviz" FILES "/opt/ros/humble/lib/python3.10/site-packages/ament_package/template/environment_hook/library_path.sh" "DESTINATION" "share/cartographer_rviz/environment")
 
 # install(FILES "/home/user/cartographer_ws_docker/build/cartographer_rviz/ament_cmake_environment_hooks/library_path.dsv" "DESTINATION" "share/cartographer_rviz/environment")
 ament_cmake_symlink_install_files("/home/user/cartographer_ws_docker/src/cartographer_ros/cartographer_rviz" FILES "/home/user/cartographer_ws_docker/build/cartographer_rviz/ament_cmake_environment_hooks/library_path.dsv" "DESTINATION" "share/cartographer_rviz/environment")
@@ -328,14 +328,14 @@ ament_cmake_symlink_install_files("/home/user/cartographer_ws_docker/src/cartogr
 # install(FILES "/home/user/cartographer_ws_docker/build/cartographer_rviz/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/cartographer_rviz" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
 ament_cmake_symlink_install_files("/home/user/cartographer_ws_docker/src/cartographer_ros/cartographer_rviz" FILES "/home/user/cartographer_ws_docker/build/cartographer_rviz/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/cartographer_rviz" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
 
-# install(FILES "/home/user/tracing_ws/install/ament_cmake_core/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/cartographer_rviz/environment")
-ament_cmake_symlink_install_files("/home/user/cartographer_ws_docker/src/cartographer_ros/cartographer_rviz" FILES "/home/user/tracing_ws/install/ament_cmake_core/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/cartographer_rviz/environment")
+# install(FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/cartographer_rviz/environment")
+ament_cmake_symlink_install_files("/home/user/cartographer_ws_docker/src/cartographer_ros/cartographer_rviz" FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/cartographer_rviz/environment")
 
 # install(FILES "/home/user/cartographer_ws_docker/build/cartographer_rviz/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/cartographer_rviz/environment")
 ament_cmake_symlink_install_files("/home/user/cartographer_ws_docker/src/cartographer_ros/cartographer_rviz" FILES "/home/user/cartographer_ws_docker/build/cartographer_rviz/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/cartographer_rviz/environment")
 
-# install(FILES "/home/user/tracing_ws/install/ament_cmake_core/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/cartographer_rviz/environment")
-ament_cmake_symlink_install_files("/home/user/cartographer_ws_docker/src/cartographer_ros/cartographer_rviz" FILES "/home/user/tracing_ws/install/ament_cmake_core/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/cartographer_rviz/environment")
+# install(FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/cartographer_rviz/environment")
+ament_cmake_symlink_install_files("/home/user/cartographer_ws_docker/src/cartographer_ros/cartographer_rviz" FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/cartographer_rviz/environment")
 
 # install(FILES "/home/user/cartographer_ws_docker/build/cartographer_rviz/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/cartographer_rviz/environment")
 ament_cmake_symlink_install_files("/home/user/cartographer_ws_docker/src/cartographer_ros/cartographer_rviz" FILES "/home/user/cartographer_ws_docker/build/cartographer_rviz/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/cartographer_rviz/environment")
