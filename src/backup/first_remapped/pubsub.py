@@ -11,8 +11,8 @@ from rcl_interfaces.msg import ParameterEvent, Parameter, ParameterValue, Parame
 class ScanOdomRepublisher(Node):
     def __init__(self):
         super().__init__('scan_odom_republisher')
-        self.scan_publisher = self.create_publisher(LaserScan, '/scan', 10)
-        self.odom_publisher = self.create_publisher(Odometry, '/odom', 10)
+        self.scan_publisher = self.create_publisher(LaserScan, '/pc1_to_pc2/scan', 10)
+        self.odom_publisher = self.create_publisher(Odometry, '/pc1_to_pc2/odom', 10)
         self.parameter_events_publisher = self.create_publisher(ParameterEvent, '/parameter_events', 10)
         self.get_logger().info('Republisher node initialized')
 
@@ -150,7 +150,7 @@ def main(args=None):
     node = ScanOdomRepublisher()
 
     websocket.enableTrace(True)
-    ws = websocket.WebSocketApp("ws://192.168.64.58:9090",
+    ws = websocket.WebSocketApp("ws://192.168.1.23:9090",
                                 on_open=on_open,
                                 on_message=lambda ws, message: on_message(ws, message, node),
                                 on_error=on_error,

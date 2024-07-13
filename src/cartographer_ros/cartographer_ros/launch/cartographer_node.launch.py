@@ -35,4 +35,12 @@ def generate_launch_description():
             parameters=[{'use_sim_time': use_sim_time}],
             arguments=['-configuration_directory', cartographer_config_dir,
                        '-configuration_basename', configuration_basename]),
+
+        Node(
+            package='cartographer_ros',
+            executable='cartographer_occupancy_grid_node',
+            name='cartographer_occupancy_grid_node',
+            output='screen',
+            parameters=[{'use_sim_time': use_sim_time}],
+            arguments=['-resolution', '0.05', '-publish_period_sec', '1.0'])
     ])

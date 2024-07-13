@@ -1,0 +1,260 @@
+[0.079s] Invoking command in '/home/user/cartographer_ws_docker/build/cartographer': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/user/tracing_ws/install/ros2bag:/home/user/tracing_ws/install/tracetools_test:/home/user/tracing_ws/install/tracetools_launch:/home/user/tracing_ws/install/tf2_tools:/home/user/tracing_ws/install/tf2_ros_py:/home/user/tracing_ws/install/sros2:/home/user/tracing_ws/install/rqt_plot:/home/user/tracing_ws/install/rqt_msg:/home/user/tracing_ws/install/rqt_console:/home/user/tracing_ws/install/rqt_gui_py:/home/user/tracing_ws/install/rqt_gui:/home/user/tracing_ws/install/ros2trace:/home/user/tracing_ws/install/ros2topic:/home/user/tracing_ws/install/ros2test:/home/user/tracing_ws/install/ros2param:/home/user/tracing_ws/install/ros2service:/home/user/tracing_ws/install/ros2run:/home/user/tracing_ws/install/ros2pkg:/home/user/tracing_ws/install/ros2node:/home/user/tracing_ws/install/ros2multicast:/home/user/tracing_ws/install/ros2interface:/home/user/tracing_ws/install/ros2doctor:/home/user/tracing_ws/install/ros2action:/home/user/tracing_ws/install/ros2cli:/home/user/tracing_ws/install/launch_testing_ros:/home/user/tracing_ws/install/launch_ros:/home/user/tracing_ws/install/demo_nodes_py:/home/user/tracing_ws/install/ament_uncrustify:/home/user/tracing_ws/install/tracetools_trace:/home/user/tracing_ws/install/tracetools_analysis:/home/user/tracing_ws/install/tracetools_read:/home/user/tracing_ws/install/sensor_msgs_py:/home/user/tracing_ws/install/rpyutils:/home/user/tracing_ws/install/rosidl_runtime_py:/home/user/tracing_ws/install/rosidl_cli:/home/user/tracing_ws/install/launch_testing:/home/user/tracing_ws/install/launch_yaml:/home/user/tracing_ws/install/launch_xml:/home/user/tracing_ws/install/launch:/home/user/tracing_ws/install/osrf_pycommon:/home/user/tracing_ws/install/hello:/home/user/tracing_ws/install/domain_coordinator:/home/user/tracing_ws/install/ament_xmllint:/home/user/tracing_ws/install/ament_pyflakes:/home/user/tracing_ws/install/ament_pycodestyle:/home/user/tracing_ws/install/ament_pep257:/home/user/tracing_ws/install/ament_pclint:/home/user/tracing_ws/install/ament_package:/home/user/tracing_ws/install/ament_mypy:/home/user/tracing_ws/install/ament_lint_cmake:/home/user/tracing_ws/install/ament_flake8:/home/user/tracing_ws/install/ament_copyright:/home/user/tracing_ws/install/ament_lint:/home/user/tracing_ws/install/ament_index_python:/home/user/tracing_ws/install/ament_cpplint:/home/user/tracing_ws/install/ament_cppcheck:/home/user/tracing_ws/install/ament_clang_tidy:/home/user/tracing_ws/install/ament_clang_format:/opt/ros/humble /usr/bin/cmake --build /home/user/cartographer_ws_docker/build/cartographer -- -j6 -l6
+[0.295s] [  0%] [34m[1mBuilding documentation.[0m
+[0.305s] [  1%] Built target gtest
+[0.332s] [  1%] Built target cartographer_detect_changes
+[0.434s] [  2%] Built target gmock
+[0.559s] [  2%] Built target gmock_main
+[0.588s] [ 55%] Built target cartographer
+[0.731s] [ 56%] Built target cartographer_pbstream
+[0.742s] [ 57%] Built target cartographer_autogenerate_ground_truth
+[0.766s] [ 57%] Built target cartographer_print_configuration
+[0.774s] [ 57%] Built target cartographer_compute_relations_metrics
+[0.784s] [ 58%] Built target cartographer_test_library
+[0.905s] [ 58%] Built target cartographer.common.configuration_files_test
+[0.906s] [ 59%] Built target cartographer.common.internal.rate_timer_test
+[0.924s] [ 60%] Built target cartographer.common.fixed_ratio_sampler_test
+[0.928s] [ 60%] Built target cartographer.common.internal.blocking_queue_test
+[0.944s] [ 60%] Built target cartographer.common.lua_parameter_dictionary_test
+[1.051s] [ 61%] Built target cartographer.common.math_test
+[1.073s] [ 62%] Built target cartographer.common.thread_pool_test
+[1.079s] [01mRunning Sphinx v4.3.2[39;49;00m
+[1.089s] [ 62%] Built target cartographer.common.task_test
+[1.090s] [ 62%] Built target cartographer.io.fake_file_writer_test
+[1.094s] [ 63%] Built target cartographer.io.internal.in_memory_proto_stream_test
+[1.205s] [ 63%] Built target cartographer.io.points_processor_pipeline_builder_test
+[1.215s] [ 64%] Built target cartographer.io.serialization_format_migration_test
+[1.216s] [ 64%] Built target cartographer.io.probability_grid_points_processor_test
+[1.230s] [ 65%] Built target cartographer.io.proto_stream_test
+[1.239s] [ 65%] Built target cartographer.io.proto_stream_deserializer_test
+[1.272s] [01mloading pickled environment... [39;49;00mdone
+[1.276s] [01mbuilding [mo]: [39;49;00mtargets for 0 po files that are out of date
+[1.277s] [01mbuilding [html]: [39;49;00mtargets for 0 source files that are out of date
+[1.279s] [01mupdating environment: [39;49;00m0 added, 0 changed, 0 removed
+[1.279s] [01mlooking for now-outdated files... [39;49;00mnone found
+[1.280s] [01mno targets are out of date.[39;49;00m
+[1.298s] [01mbuild succeeded.[39;49;00m
+[1.298s] 
+[1.298s] The HTML pages are in html.
+[1.309s] [ 66%] Built target cartographer.mapping.2d.map_limits_test
+[1.335s] [ 66%] Built target cartographer.mapping.2d.probability_grid_test
+[1.348s] [ 66%] Built target cartographer.mapping.2d.submap_2d_test
+[1.352s] [ 67%] Built target cartographer.mapping.2d.range_data_inserter_2d_test
+[1.400s] [ 67%] Built target build_doc
+[1.413s] [ 68%] Built target cartographer.mapping.2d.xy_index_test
+[1.466s] [ 68%] Built target cartographer.mapping.3d.hybrid_grid_test
+[1.476s] [ 69%] Built target cartographer.mapping.3d.range_data_inserter_3d_test
+[1.481s] [ 69%] Built target cartographer.mapping.3d.submap_3d_test
+[1.482s] [ 70%] Built target cartographer.mapping.id_test
+[1.532s] [ 71%] Built target cartographer.mapping.internal.2d.normal_estimation_2d_test
+[1.537s] [ 71%] Built target cartographer.mapping.imu_tracker_test
+[1.602s] [ 72%] Built target cartographer.mapping.internal.2d.pose_graph_2d_test
+[1.616s] [ 72%] Built target cartographer.mapping.internal.2d.overlapping_submaps_trimmer_2d_test
+[1.622s] [ 73%] Built target cartographer.mapping.internal.2d.scan_matching.ceres_scan_matcher_2d_test
+[1.622s] [ 73%] Built target cartographer.mapping.internal.2d.ray_to_pixel_mask_test
+[1.662s] [ 74%] Built target cartographer.mapping.internal.2d.scan_matching.fast_correlative_scan_matcher_2d_test
+[1.675s] [ 74%] Built target cartographer.mapping.internal.2d.scan_matching.correlative_scan_matcher_test
+[1.750s] [ 75%] Built target cartographer.mapping.internal.2d.scan_matching.occupied_space_cost_function_2d_test
+[1.750s] [ 75%] Built target cartographer.mapping.internal.2d.scan_matching.real_time_correlative_scan_matcher_2d_test
+[1.769s] [ 76%] Built target cartographer.mapping.internal.2d.scan_matching.interpolated_tsdf_2d_test
+[1.786s] [ 76%] Built target cartographer.mapping.internal.2d.scan_matching.tsdf_match_cost_function_2d_test
+[1.786s] [ 77%] Built target cartographer.mapping.internal.2d.tsd_value_converter_test
+[1.810s] [ 77%] Built target cartographer.mapping.internal.2d.tsdf_2d_test
+[1.877s] [ 78%] Built target cartographer.mapping.internal.2d.tsdf_range_data_inserter_2d_test
+[1.878s] [ 78%] Built target cartographer.mapping.internal.3d.local_trajectory_builder_3d_test
+[1.895s] [ 78%] Built target cartographer.mapping.internal.3d.rotation_parameterization_test
+[1.899s] [ 79%] Built target cartographer.mapping.internal.3d.pose_graph_3d_test
+[1.915s] [ 80%] Built target cartographer.mapping.internal.3d.scan_matching.ceres_scan_matcher_3d_test
+[1.951s] [ 80%] Built target cartographer.mapping.internal.3d.scan_matching.fast_correlative_scan_matcher_3d_test
+[1.990s] [ 81%] Built target cartographer.mapping.internal.3d.scan_matching.intensity_cost_function_3d_test
+[2.001s] [ 81%] Built target cartographer.mapping.internal.3d.scan_matching.interpolated_grid_test
+[2.011s] [ 82%] Built target cartographer.mapping.internal.3d.scan_matching.precomputation_grid_3d_test
+[2.028s] [ 82%] Built target cartographer.mapping.internal.3d.scan_matching.real_time_correlative_scan_matcher_3d_test
+[2.038s] [ 83%] Built target cartographer.mapping.internal.3d.scan_matching.rotation_delta_cost_functor_3d_test
+[2.064s] [ 83%] Built target cartographer.mapping.internal.3d.scan_matching.rotational_scan_matcher_test
+[2.116s] [ 84%] Built target cartographer.mapping.internal.connected_components_test
+[2.131s] [ 84%] Built target cartographer.mapping.internal.constraints.constraint_builder_2d_test
+[2.139s] [ 85%] Built target cartographer.mapping.internal.constraints.constraint_builder_3d_test
+[2.146s] [ 85%] Built target cartographer.mapping.internal.motion_filter_test
+[2.175s] [ 86%] Built target cartographer.mapping.internal.optimization.cost_functions.landmark_cost_function_2d_test
+[2.183s] [ 86%] Built target cartographer.mapping.internal.optimization.cost_functions.landmark_cost_function_3d_test
+[2.233s] [ 86%] Built target cartographer.mapping.internal.optimization.optimization_problem_3d_test
+[2.249s] [ 87%] Built target cartographer.mapping.internal.optimization.cost_functions.spa_cost_function_2d_test
+[2.258s] [ 88%] Built target cartographer.mapping.internal.range_data_collator_test
+[2.274s] [ 88%] Built target cartographer.mapping.internal.trajectory_connectivity_state_test
+[2.280s] [ 89%] Built target cartographer.mapping.map_builder_test
+[2.299s] [ 89%] Built target cartographer.mapping.pose_extrapolator_test
+[2.353s] [ 89%] Built target cartographer.mapping.pose_graph_trimmer_test
+[2.372s] [ 90%] Built target cartographer.mapping.probability_values_test
+[2.375s] [ 91%] Built target cartographer.mapping.pose_graph_test
+[2.393s] [ 92%] Built target cartographer.mapping.trajectory_node_test
+[2.406s] [ 92%] Built target cartographer.mapping.submaps_test
+[2.416s] [ 92%] Built target cartographer.mapping.value_conversion_tables_test
+[2.493s] [ 93%] Built target cartographer.sensor.compressed_point_cloud_test
+[2.516s] [ 94%] Built target cartographer.sensor.internal.ordered_multi_queue_test
+[2.526s] [ 94%] Built target cartographer.sensor.internal.collator_test
+[2.532s] [ 95%] Built target cartographer.sensor.internal.trajectory_collator_test
+[2.544s] [ 95%] Built target cartographer.sensor.internal.voxel_filter_test
+[2.573s] [ 96%] Built target cartographer.sensor.landmark_data_test
+[2.643s] [ 96%] Built target cartographer.sensor.map_by_time_test
+[2.655s] [ 97%] Built target cartographer.sensor.point_cloud_test
+[2.680s] [ 98%] Built target cartographer.transform.rigid_transform_test
+[2.689s] [ 98%] Built target cartographer.transform.timestamped_transform_test
+[2.715s] [100%] Built target cartographer.sensor.range_data_test
+[2.715s] [100%] Built target cartographer.transform.transform_interpolation_buffer_test
+[2.754s] [100%] Built target cartographer.transform.transform_test
+[2.791s] Invoked command in '/home/user/cartographer_ws_docker/build/cartographer' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/user/tracing_ws/install/ros2bag:/home/user/tracing_ws/install/tracetools_test:/home/user/tracing_ws/install/tracetools_launch:/home/user/tracing_ws/install/tf2_tools:/home/user/tracing_ws/install/tf2_ros_py:/home/user/tracing_ws/install/sros2:/home/user/tracing_ws/install/rqt_plot:/home/user/tracing_ws/install/rqt_msg:/home/user/tracing_ws/install/rqt_console:/home/user/tracing_ws/install/rqt_gui_py:/home/user/tracing_ws/install/rqt_gui:/home/user/tracing_ws/install/ros2trace:/home/user/tracing_ws/install/ros2topic:/home/user/tracing_ws/install/ros2test:/home/user/tracing_ws/install/ros2param:/home/user/tracing_ws/install/ros2service:/home/user/tracing_ws/install/ros2run:/home/user/tracing_ws/install/ros2pkg:/home/user/tracing_ws/install/ros2node:/home/user/tracing_ws/install/ros2multicast:/home/user/tracing_ws/install/ros2interface:/home/user/tracing_ws/install/ros2doctor:/home/user/tracing_ws/install/ros2action:/home/user/tracing_ws/install/ros2cli:/home/user/tracing_ws/install/launch_testing_ros:/home/user/tracing_ws/install/launch_ros:/home/user/tracing_ws/install/demo_nodes_py:/home/user/tracing_ws/install/ament_uncrustify:/home/user/tracing_ws/install/tracetools_trace:/home/user/tracing_ws/install/tracetools_analysis:/home/user/tracing_ws/install/tracetools_read:/home/user/tracing_ws/install/sensor_msgs_py:/home/user/tracing_ws/install/rpyutils:/home/user/tracing_ws/install/rosidl_runtime_py:/home/user/tracing_ws/install/rosidl_cli:/home/user/tracing_ws/install/launch_testing:/home/user/tracing_ws/install/launch_yaml:/home/user/tracing_ws/install/launch_xml:/home/user/tracing_ws/install/launch:/home/user/tracing_ws/install/osrf_pycommon:/home/user/tracing_ws/install/hello:/home/user/tracing_ws/install/domain_coordinator:/home/user/tracing_ws/install/ament_xmllint:/home/user/tracing_ws/install/ament_pyflakes:/home/user/tracing_ws/install/ament_pycodestyle:/home/user/tracing_ws/install/ament_pep257:/home/user/tracing_ws/install/ament_pclint:/home/user/tracing_ws/install/ament_package:/home/user/tracing_ws/install/ament_mypy:/home/user/tracing_ws/install/ament_lint_cmake:/home/user/tracing_ws/install/ament_flake8:/home/user/tracing_ws/install/ament_copyright:/home/user/tracing_ws/install/ament_lint:/home/user/tracing_ws/install/ament_index_python:/home/user/tracing_ws/install/ament_cpplint:/home/user/tracing_ws/install/ament_cppcheck:/home/user/tracing_ws/install/ament_clang_tidy:/home/user/tracing_ws/install/ament_clang_format:/opt/ros/humble /usr/bin/cmake --build /home/user/cartographer_ws_docker/build/cartographer -- -j6 -l6
+[8.998s] Invoking command in '/home/user/cartographer_ws_docker/build/cartographer': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/user/tracing_ws/install/ros2bag:/home/user/tracing_ws/install/tracetools_test:/home/user/tracing_ws/install/tracetools_launch:/home/user/tracing_ws/install/tf2_tools:/home/user/tracing_ws/install/tf2_ros_py:/home/user/tracing_ws/install/sros2:/home/user/tracing_ws/install/rqt_plot:/home/user/tracing_ws/install/rqt_msg:/home/user/tracing_ws/install/rqt_console:/home/user/tracing_ws/install/rqt_gui_py:/home/user/tracing_ws/install/rqt_gui:/home/user/tracing_ws/install/ros2trace:/home/user/tracing_ws/install/ros2topic:/home/user/tracing_ws/install/ros2test:/home/user/tracing_ws/install/ros2param:/home/user/tracing_ws/install/ros2service:/home/user/tracing_ws/install/ros2run:/home/user/tracing_ws/install/ros2pkg:/home/user/tracing_ws/install/ros2node:/home/user/tracing_ws/install/ros2multicast:/home/user/tracing_ws/install/ros2interface:/home/user/tracing_ws/install/ros2doctor:/home/user/tracing_ws/install/ros2action:/home/user/tracing_ws/install/ros2cli:/home/user/tracing_ws/install/launch_testing_ros:/home/user/tracing_ws/install/launch_ros:/home/user/tracing_ws/install/demo_nodes_py:/home/user/tracing_ws/install/ament_uncrustify:/home/user/tracing_ws/install/tracetools_trace:/home/user/tracing_ws/install/tracetools_analysis:/home/user/tracing_ws/install/tracetools_read:/home/user/tracing_ws/install/sensor_msgs_py:/home/user/tracing_ws/install/rpyutils:/home/user/tracing_ws/install/rosidl_runtime_py:/home/user/tracing_ws/install/rosidl_cli:/home/user/tracing_ws/install/launch_testing:/home/user/tracing_ws/install/launch_yaml:/home/user/tracing_ws/install/launch_xml:/home/user/tracing_ws/install/launch:/home/user/tracing_ws/install/osrf_pycommon:/home/user/tracing_ws/install/hello:/home/user/tracing_ws/install/domain_coordinator:/home/user/tracing_ws/install/ament_xmllint:/home/user/tracing_ws/install/ament_pyflakes:/home/user/tracing_ws/install/ament_pycodestyle:/home/user/tracing_ws/install/ament_pep257:/home/user/tracing_ws/install/ament_pclint:/home/user/tracing_ws/install/ament_package:/home/user/tracing_ws/install/ament_mypy:/home/user/tracing_ws/install/ament_lint_cmake:/home/user/tracing_ws/install/ament_flake8:/home/user/tracing_ws/install/ament_copyright:/home/user/tracing_ws/install/ament_lint:/home/user/tracing_ws/install/ament_index_python:/home/user/tracing_ws/install/ament_cpplint:/home/user/tracing_ws/install/ament_cppcheck:/home/user/tracing_ws/install/ament_clang_tidy:/home/user/tracing_ws/install/ament_clang_format:/opt/ros/humble /usr/bin/cmake --install /home/user/cartographer_ws_docker/build/cartographer
+[9.025s] -- Install configuration: "Release"
+[9.028s] -- Up-to-date: /home/user/cartographer_ws_docker/install/cartographer/share/cartographer/package.xml
+[9.029s] -- Up-to-date: /home/user/cartographer_ws_docker/install/cartographer/share/cartographer//configuration_files
+[9.029s] -- Up-to-date: /home/user/cartographer_ws_docker/install/cartographer/share/cartographer//configuration_files/trajectory_builder.lua
+[9.029s] -- Up-to-date: /home/user/cartographer_ws_docker/install/cartographer/share/cartographer//configuration_files/trajectory_builder_2d.lua
+[9.029s] -- Up-to-date: /home/user/cartographer_ws_docker/install/cartographer/share/cartographer//configuration_files/map_builder_server.lua
+[9.029s] -- Up-to-date: /home/user/cartographer_ws_docker/install/cartographer/share/cartographer//configuration_files/pose_graph.lua
+[9.029s] -- Up-to-date: /home/user/cartographer_ws_docker/install/cartographer/share/cartographer//configuration_files/trajectory_builder_3d.lua
+[9.029s] -- Up-to-date: /home/user/cartographer_ws_docker/install/cartographer/share/cartographer//configuration_files/map_builder.lua
+[9.029s] -- Up-to-date: /home/user/cartographer_ws_docker/install/cartographer/share/cartographer//cmake
+[9.030s] -- Up-to-date: /home/user/cartographer_ws_docker/install/cartographer/share/cartographer//cmake/modules
+[9.030s] -- Up-to-date: /home/user/cartographer_ws_docker/install/cartographer/share/cartographer//cmake/modules/FindGMock.cmake
+[9.030s] -- Up-to-date: /home/user/cartographer_ws_docker/install/cartographer/share/cartographer//cmake/modules/FindLuaGoogle.cmake
+[9.030s] -- Up-to-date: /home/user/cartographer_ws_docker/install/cartographer/share/cartographer//cmake/modules/FindSphinx.cmake
+[9.030s] -- Up-to-date: /home/user/cartographer_ws_docker/install/cartographer/share/cartographer//cmake/modules/FindEigen3.cmake
+[9.030s] -- Up-to-date: /home/user/cartographer_ws_docker/install/cartographer/share/cartographer//cmake/functions.cmake
+[9.031s] -- Up-to-date: /home/user/cartographer_ws_docker/install/cartographer/bin/cartographer_autogenerate_ground_truth
+[9.031s] -- Up-to-date: /home/user/cartographer_ws_docker/install/cartographer/bin/cartographer_compute_relations_metrics
+[9.031s] -- Up-to-date: /home/user/cartographer_ws_docker/install/cartographer/bin/cartographer_pbstream
+[9.031s] -- Up-to-date: /home/user/cartographer_ws_docker/install/cartographer/bin/cartographer_print_configuration
+[9.031s] -- Up-to-date: /home/user/cartographer_ws_docker/install/cartographer/lib/libcartographer.a
+[9.031s] -- Up-to-date: /home/user/cartographer_ws_docker/install/cartographer/include/cartographer/common/configuration_file_resolver.h
+[9.031s] -- Up-to-date: /home/user/cartographer_ws_docker/install/cartographer/include/cartographer/common/fixed_ratio_sampler.h
+[9.031s] -- Up-to-date: /home/user/cartographer_ws_docker/install/cartographer/include/cartographer/common/histogram.h
+[9.032s] -- Up-to-date: /home/user/cartographer_ws_docker/install/cartographer/include/cartographer/common/lua.h
+[9.032s] -- Up-to-date: /home/user/cartographer_ws_docker/install/cartographer/include/cartographer/common/lua_parameter_dictionary.h
+[9.032s] -- Up-to-date: /home/user/cartographer_ws_docker/install/cartographer/include/cartographer/common/math.h
+[9.032s] -- Up-to-date: /home/user/cartographer_ws_docker/install/cartographer/include/cartographer/common/port.h
+[9.032s] -- Up-to-date: /home/user/cartographer_ws_docker/install/cartographer/include/cartographer/common/task.h
+[9.032s] -- Up-to-date: /home/user/cartographer_ws_docker/install/cartographer/include/cartographer/common/thread_pool.h
+[9.032s] -- Up-to-date: /home/user/cartographer_ws_docker/install/cartographer/include/cartographer/common/time.h
+[9.032s] -- Up-to-date: /home/user/cartographer_ws_docker/install/cartographer/include/cartographer/ground_truth/autogenerate_ground_truth.h
+[9.033s] -- Up-to-date: /home/user/cartographer_ws_docker/install/cartographer/include/cartographer/ground_truth/relations_text_file.h
+[9.033s] -- Up-to-date: /home/user/cartographer_ws_docker/install/cartographer/include/cartographer/io/color.h
+[9.033s] -- Up-to-date: /home/user/cartographer_ws_docker/install/cartographer/include/cartographer/io/coloring_points_processor.h
+[9.033s] -- Up-to-date: /home/user/cartographer_ws_docker/install/cartographer/include/cartographer/io/counting_points_processor.h
+[9.033s] -- Up-to-date: /home/user/cartographer_ws_docker/install/cartographer/include/cartographer/io/draw_trajectories.h
+[9.033s] -- Up-to-date: /home/user/cartographer_ws_docker/install/cartographer/include/cartographer/io/file_writer.h
+[9.033s] -- Up-to-date: /home/user/cartographer_ws_docker/install/cartographer/include/cartographer/io/fixed_ratio_sampling_points_processor.h
+[9.034s] -- Up-to-date: /home/user/cartographer_ws_docker/install/cartographer/include/cartographer/io/frame_id_filtering_points_processor.h
+[9.034s] -- Up-to-date: /home/user/cartographer_ws_docker/install/cartographer/include/cartographer/io/hybrid_grid_points_processor.h
+[9.034s] -- Up-to-date: /home/user/cartographer_ws_docker/install/cartographer/include/cartographer/io/image.h
+[9.034s] -- Up-to-date: /home/user/cartographer_ws_docker/install/cartographer/include/cartographer/io/intensity_to_color_points_processor.h
+[9.034s] -- Up-to-date: /home/user/cartographer_ws_docker/install/cartographer/include/cartographer/io/min_max_range_filtering_points_processor.h
+[9.034s] -- Up-to-date: /home/user/cartographer_ws_docker/install/cartographer/include/cartographer/io/null_points_processor.h
+[9.034s] -- Up-to-date: /home/user/cartographer_ws_docker/install/cartographer/include/cartographer/io/outlier_removing_points_processor.h
+[9.034s] -- Up-to-date: /home/user/cartographer_ws_docker/install/cartographer/include/cartographer/io/pcd_writing_points_processor.h
+[9.034s] -- Up-to-date: /home/user/cartographer_ws_docker/install/cartographer/include/cartographer/io/ply_writing_points_processor.h
+[9.034s] -- Up-to-date: /home/user/cartographer_ws_docker/install/cartographer/include/cartographer/io/points_batch.h
+[9.035s] -- Up-to-date: /home/user/cartographer_ws_docker/install/cartographer/include/cartographer/io/points_processor.h
+[9.035s] -- Up-to-date: /home/user/cartographer_ws_docker/install/cartographer/include/cartographer/io/points_processor_pipeline_builder.h
+[9.035s] -- Up-to-date: /home/user/cartographer_ws_docker/install/cartographer/include/cartographer/io/probability_grid_points_processor.h
+[9.035s] -- Up-to-date: /home/user/cartographer_ws_docker/install/cartographer/include/cartographer/io/proto_stream.h
+[9.035s] -- Up-to-date: /home/user/cartographer_ws_docker/install/cartographer/include/cartographer/io/proto_stream_deserializer.h
+[9.035s] -- Up-to-date: /home/user/cartographer_ws_docker/install/cartographer/include/cartographer/io/proto_stream_interface.h
+[9.035s] -- Up-to-date: /home/user/cartographer_ws_docker/install/cartographer/include/cartographer/io/serialization_format_migration.h
+[9.036s] -- Up-to-date: /home/user/cartographer_ws_docker/install/cartographer/include/cartographer/io/submap_painter.h
+[9.036s] -- Up-to-date: /home/user/cartographer_ws_docker/install/cartographer/include/cartographer/io/vertical_range_filtering_points_processor.h
+[9.036s] -- Up-to-date: /home/user/cartographer_ws_docker/install/cartographer/include/cartographer/io/xray_points_processor.h
+[9.036s] -- Up-to-date: /home/user/cartographer_ws_docker/install/cartographer/include/cartographer/io/xyz_writing_points_processor.h
+[9.036s] -- Up-to-date: /home/user/cartographer_ws_docker/install/cartographer/include/cartographer/mapping/2d/grid_2d.h
+[9.036s] -- Up-to-date: /home/user/cartographer_ws_docker/install/cartographer/include/cartographer/mapping/2d/map_limits.h
+[9.036s] -- Up-to-date: /home/user/cartographer_ws_docker/install/cartographer/include/cartographer/mapping/2d/probability_grid.h
+[9.037s] -- Up-to-date: /home/user/cartographer_ws_docker/install/cartographer/include/cartographer/mapping/2d/probability_grid_range_data_inserter_2d.h
+[9.037s] -- Up-to-date: /home/user/cartographer_ws_docker/install/cartographer/include/cartographer/mapping/2d/submap_2d.h
+[9.037s] -- Up-to-date: /home/user/cartographer_ws_docker/install/cartographer/include/cartographer/mapping/2d/xy_index.h
+[9.037s] -- Up-to-date: /home/user/cartographer_ws_docker/install/cartographer/include/cartographer/mapping/3d/hybrid_grid.h
+[9.037s] -- Up-to-date: /home/user/cartographer_ws_docker/install/cartographer/include/cartographer/mapping/3d/range_data_inserter_3d.h
+[9.037s] -- Up-to-date: /home/user/cartographer_ws_docker/install/cartographer/include/cartographer/mapping/3d/submap_3d.h
+[9.039s] -- Up-to-date: /home/user/cartographer_ws_docker/install/cartographer/include/cartographer/mapping/detect_floors.h
+[9.039s] -- Up-to-date: /home/user/cartographer_ws_docker/install/cartographer/include/cartographer/mapping/grid_interface.h
+[9.040s] -- Up-to-date: /home/user/cartographer_ws_docker/install/cartographer/include/cartographer/mapping/id.h
+[9.040s] -- Up-to-date: /home/user/cartographer_ws_docker/install/cartographer/include/cartographer/mapping/imu_tracker.h
+[9.040s] -- Up-to-date: /home/user/cartographer_ws_docker/install/cartographer/include/cartographer/mapping/map_builder.h
+[9.040s] -- Up-to-date: /home/user/cartographer_ws_docker/install/cartographer/include/cartographer/mapping/map_builder_interface.h
+[9.040s] -- Up-to-date: /home/user/cartographer_ws_docker/install/cartographer/include/cartographer/mapping/pose_extrapolator.h
+[9.040s] -- Up-to-date: /home/user/cartographer_ws_docker/install/cartographer/include/cartographer/mapping/pose_extrapolator_interface.h
+[9.040s] -- Up-to-date: /home/user/cartographer_ws_docker/install/cartographer/include/cartographer/mapping/pose_graph.h
+[9.040s] -- Up-to-date: /home/user/cartographer_ws_docker/install/cartographer/include/cartographer/mapping/pose_graph_interface.h
+[9.040s] -- Up-to-date: /home/user/cartographer_ws_docker/install/cartographer/include/cartographer/mapping/pose_graph_trimmer.h
+[9.040s] -- Up-to-date: /home/user/cartographer_ws_docker/install/cartographer/include/cartographer/mapping/probability_values.h
+[9.040s] -- Up-to-date: /home/user/cartographer_ws_docker/install/cartographer/include/cartographer/mapping/range_data_inserter_interface.h
+[9.040s] -- Up-to-date: /home/user/cartographer_ws_docker/install/cartographer/include/cartographer/mapping/submaps.h
+[9.041s] -- Up-to-date: /home/user/cartographer_ws_docker/install/cartographer/include/cartographer/mapping/trajectory_builder_interface.h
+[9.041s] -- Up-to-date: /home/user/cartographer_ws_docker/install/cartographer/include/cartographer/mapping/trajectory_node.h
+[9.041s] -- Up-to-date: /home/user/cartographer_ws_docker/install/cartographer/include/cartographer/mapping/value_conversion_tables.h
+[9.041s] -- Up-to-date: /home/user/cartographer_ws_docker/install/cartographer/include/cartographer/metrics/counter.h
+[9.041s] -- Up-to-date: /home/user/cartographer_ws_docker/install/cartographer/include/cartographer/metrics/family_factory.h
+[9.041s] -- Up-to-date: /home/user/cartographer_ws_docker/install/cartographer/include/cartographer/metrics/gauge.h
+[9.041s] -- Up-to-date: /home/user/cartographer_ws_docker/install/cartographer/include/cartographer/metrics/histogram.h
+[9.041s] -- Up-to-date: /home/user/cartographer_ws_docker/install/cartographer/include/cartographer/metrics/register.h
+[9.041s] -- Up-to-date: /home/user/cartographer_ws_docker/install/cartographer/include/cartographer/sensor/collator_interface.h
+[9.041s] -- Up-to-date: /home/user/cartographer_ws_docker/install/cartographer/include/cartographer/sensor/compressed_point_cloud.h
+[9.041s] -- Up-to-date: /home/user/cartographer_ws_docker/install/cartographer/include/cartographer/sensor/data.h
+[9.041s] -- Up-to-date: /home/user/cartographer_ws_docker/install/cartographer/include/cartographer/sensor/fixed_frame_pose_data.h
+[9.042s] -- Up-to-date: /home/user/cartographer_ws_docker/install/cartographer/include/cartographer/sensor/imu_data.h
+[9.042s] -- Up-to-date: /home/user/cartographer_ws_docker/install/cartographer/include/cartographer/sensor/landmark_data.h
+[9.042s] -- Up-to-date: /home/user/cartographer_ws_docker/install/cartographer/include/cartographer/sensor/map_by_time.h
+[9.042s] -- Up-to-date: /home/user/cartographer_ws_docker/install/cartographer/include/cartographer/sensor/odometry_data.h
+[9.042s] -- Up-to-date: /home/user/cartographer_ws_docker/install/cartographer/include/cartographer/sensor/point_cloud.h
+[9.042s] -- Up-to-date: /home/user/cartographer_ws_docker/install/cartographer/include/cartographer/sensor/range_data.h
+[9.042s] -- Up-to-date: /home/user/cartographer_ws_docker/install/cartographer/include/cartographer/sensor/rangefinder_point.h
+[9.042s] -- Up-to-date: /home/user/cartographer_ws_docker/install/cartographer/include/cartographer/sensor/timed_point_cloud_data.h
+[9.042s] -- Up-to-date: /home/user/cartographer_ws_docker/install/cartographer/include/cartographer/transform/rigid_transform.h
+[9.042s] -- Up-to-date: /home/user/cartographer_ws_docker/install/cartographer/include/cartographer/transform/timestamped_transform.h
+[9.042s] -- Up-to-date: /home/user/cartographer_ws_docker/install/cartographer/include/cartographer/transform/transform.h
+[9.042s] -- Up-to-date: /home/user/cartographer_ws_docker/install/cartographer/include/cartographer/transform/transform_interpolation_buffer.h
+[9.042s] -- Up-to-date: /home/user/cartographer_ws_docker/install/cartographer/include/cartographer/io/fake_file_writer.h
+[9.043s] -- Up-to-date: /home/user/cartographer_ws_docker/install/cartographer/include/cartographer/transform/rigid_transform_test_helpers.h
+[9.043s] -- Up-to-date: /home/user/cartographer_ws_docker/install/cartographer/include/cartographer/common/proto/ceres_solver_options.pb.h
+[9.043s] -- Up-to-date: /home/user/cartographer_ws_docker/install/cartographer/include/cartographer/ground_truth/proto/relations.pb.h
+[9.043s] -- Up-to-date: /home/user/cartographer_ws_docker/install/cartographer/include/cartographer/mapping/proto/cell_limits_2d.pb.h
+[9.043s] -- Up-to-date: /home/user/cartographer_ws_docker/install/cartographer/include/cartographer/mapping/proto/connected_components.pb.h
+[9.043s] -- Up-to-date: /home/user/cartographer_ws_docker/install/cartographer/include/cartographer/mapping/proto/grid_2d.pb.h
+[9.043s] -- Up-to-date: /home/user/cartographer_ws_docker/install/cartographer/include/cartographer/mapping/proto/grid_2d_options.pb.h
+[9.043s] -- Up-to-date: /home/user/cartographer_ws_docker/install/cartographer/include/cartographer/mapping/proto/hybrid_grid.pb.h
+[9.043s] -- Up-to-date: /home/user/cartographer_ws_docker/install/cartographer/include/cartographer/mapping/proto/local_trajectory_builder_options_2d.pb.h
+[9.043s] -- Up-to-date: /home/user/cartographer_ws_docker/install/cartographer/include/cartographer/mapping/proto/local_trajectory_builder_options_3d.pb.h
+[9.043s] -- Up-to-date: /home/user/cartographer_ws_docker/install/cartographer/include/cartographer/mapping/proto/map_builder_options.pb.h
+[9.043s] -- Up-to-date: /home/user/cartographer_ws_docker/install/cartographer/include/cartographer/mapping/proto/map_limits.pb.h
+[9.043s] -- Up-to-date: /home/user/cartographer_ws_docker/install/cartographer/include/cartographer/mapping/proto/motion_filter_options.pb.h
+[9.044s] -- Up-to-date: /home/user/cartographer_ws_docker/install/cartographer/include/cartographer/mapping/proto/normal_estimation_options_2d.pb.h
+[9.044s] -- Up-to-date: /home/user/cartographer_ws_docker/install/cartographer/include/cartographer/mapping/proto/pose_extrapolator_options.pb.h
+[9.044s] -- Up-to-date: /home/user/cartographer_ws_docker/install/cartographer/include/cartographer/mapping/proto/pose_graph.pb.h
+[9.044s] -- Up-to-date: /home/user/cartographer_ws_docker/install/cartographer/include/cartographer/mapping/proto/pose_graph/constraint_builder_options.pb.h
+[9.044s] -- Up-to-date: /home/user/cartographer_ws_docker/install/cartographer/include/cartographer/mapping/proto/pose_graph/optimization_problem_options.pb.h
+[9.044s] -- Up-to-date: /home/user/cartographer_ws_docker/install/cartographer/include/cartographer/mapping/proto/pose_graph_options.pb.h
+[9.044s] -- Up-to-date: /home/user/cartographer_ws_docker/install/cartographer/include/cartographer/mapping/proto/probability_grid.pb.h
+[9.044s] -- Up-to-date: /home/user/cartographer_ws_docker/install/cartographer/include/cartographer/mapping/proto/probability_grid_range_data_inserter_options_2d.pb.h
+[9.044s] -- Up-to-date: /home/user/cartographer_ws_docker/install/cartographer/include/cartographer/mapping/proto/range_data_inserter_options.pb.h
+[9.044s] -- Up-to-date: /home/user/cartographer_ws_docker/install/cartographer/include/cartographer/mapping/proto/range_data_inserter_options_3d.pb.h
+[9.044s] -- Up-to-date: /home/user/cartographer_ws_docker/install/cartographer/include/cartographer/mapping/proto/scan_matching/ceres_scan_matcher_options_2d.pb.h
+[9.044s] -- Up-to-date: /home/user/cartographer_ws_docker/install/cartographer/include/cartographer/mapping/proto/scan_matching/ceres_scan_matcher_options_3d.pb.h
+[9.045s] -- Up-to-date: /home/user/cartographer_ws_docker/install/cartographer/include/cartographer/mapping/proto/scan_matching/fast_correlative_scan_matcher_options_2d.pb.h
+[9.045s] -- Up-to-date: /home/user/cartographer_ws_docker/install/cartographer/include/cartographer/mapping/proto/scan_matching/fast_correlative_scan_matcher_options_3d.pb.h
+[9.045s] -- Up-to-date: /home/user/cartographer_ws_docker/install/cartographer/include/cartographer/mapping/proto/scan_matching/real_time_correlative_scan_matcher_options.pb.h
+[9.045s] -- Up-to-date: /home/user/cartographer_ws_docker/install/cartographer/include/cartographer/mapping/proto/serialization.pb.h
+[9.045s] -- Up-to-date: /home/user/cartographer_ws_docker/install/cartographer/include/cartographer/mapping/proto/submap.pb.h
+[9.045s] -- Up-to-date: /home/user/cartographer_ws_docker/install/cartographer/include/cartographer/mapping/proto/submap_visualization.pb.h
+[9.045s] -- Up-to-date: /home/user/cartographer_ws_docker/install/cartographer/include/cartographer/mapping/proto/submaps_options_2d.pb.h
+[9.045s] -- Up-to-date: /home/user/cartographer_ws_docker/install/cartographer/include/cartographer/mapping/proto/submaps_options_3d.pb.h
+[9.045s] -- Up-to-date: /home/user/cartographer_ws_docker/install/cartographer/include/cartographer/mapping/proto/trajectory.pb.h
+[9.045s] -- Up-to-date: /home/user/cartographer_ws_docker/install/cartographer/include/cartographer/mapping/proto/trajectory_builder_options.pb.h
+[9.045s] -- Up-to-date: /home/user/cartographer_ws_docker/install/cartographer/include/cartographer/mapping/proto/trajectory_node_data.pb.h
+[9.045s] -- Up-to-date: /home/user/cartographer_ws_docker/install/cartographer/include/cartographer/mapping/proto/tsdf_2d.pb.h
+[9.046s] -- Up-to-date: /home/user/cartographer_ws_docker/install/cartographer/include/cartographer/mapping/proto/tsdf_range_data_inserter_options_2d.pb.h
+[9.046s] -- Up-to-date: /home/user/cartographer_ws_docker/install/cartographer/include/cartographer/sensor/proto/adaptive_voxel_filter_options.pb.h
+[9.046s] -- Up-to-date: /home/user/cartographer_ws_docker/install/cartographer/include/cartographer/sensor/proto/sensor.pb.h
+[9.046s] -- Up-to-date: /home/user/cartographer_ws_docker/install/cartographer/include/cartographer/transform/proto/timestamped_transform.pb.h
+[9.046s] -- Up-to-date: /home/user/cartographer_ws_docker/install/cartographer/include/cartographer/transform/proto/transform.pb.h
+[9.046s] -- Up-to-date: /home/user/cartographer_ws_docker/install/cartographer/share/cartographer/cmake/CartographerTargets.cmake
+[9.046s] -- Up-to-date: /home/user/cartographer_ws_docker/install/cartographer/share/cartographer/cmake/CartographerTargets-release.cmake
+[9.046s] -- Up-to-date: /home/user/cartographer_ws_docker/install/cartographer/share/cartographer/cartographer-config.cmake
+[9.047s] Invoked command in '/home/user/cartographer_ws_docker/build/cartographer' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/user/tracing_ws/install/ros2bag:/home/user/tracing_ws/install/tracetools_test:/home/user/tracing_ws/install/tracetools_launch:/home/user/tracing_ws/install/tf2_tools:/home/user/tracing_ws/install/tf2_ros_py:/home/user/tracing_ws/install/sros2:/home/user/tracing_ws/install/rqt_plot:/home/user/tracing_ws/install/rqt_msg:/home/user/tracing_ws/install/rqt_console:/home/user/tracing_ws/install/rqt_gui_py:/home/user/tracing_ws/install/rqt_gui:/home/user/tracing_ws/install/ros2trace:/home/user/tracing_ws/install/ros2topic:/home/user/tracing_ws/install/ros2test:/home/user/tracing_ws/install/ros2param:/home/user/tracing_ws/install/ros2service:/home/user/tracing_ws/install/ros2run:/home/user/tracing_ws/install/ros2pkg:/home/user/tracing_ws/install/ros2node:/home/user/tracing_ws/install/ros2multicast:/home/user/tracing_ws/install/ros2interface:/home/user/tracing_ws/install/ros2doctor:/home/user/tracing_ws/install/ros2action:/home/user/tracing_ws/install/ros2cli:/home/user/tracing_ws/install/launch_testing_ros:/home/user/tracing_ws/install/launch_ros:/home/user/tracing_ws/install/demo_nodes_py:/home/user/tracing_ws/install/ament_uncrustify:/home/user/tracing_ws/install/tracetools_trace:/home/user/tracing_ws/install/tracetools_analysis:/home/user/tracing_ws/install/tracetools_read:/home/user/tracing_ws/install/sensor_msgs_py:/home/user/tracing_ws/install/rpyutils:/home/user/tracing_ws/install/rosidl_runtime_py:/home/user/tracing_ws/install/rosidl_cli:/home/user/tracing_ws/install/launch_testing:/home/user/tracing_ws/install/launch_yaml:/home/user/tracing_ws/install/launch_xml:/home/user/tracing_ws/install/launch:/home/user/tracing_ws/install/osrf_pycommon:/home/user/tracing_ws/install/hello:/home/user/tracing_ws/install/domain_coordinator:/home/user/tracing_ws/install/ament_xmllint:/home/user/tracing_ws/install/ament_pyflakes:/home/user/tracing_ws/install/ament_pycodestyle:/home/user/tracing_ws/install/ament_pep257:/home/user/tracing_ws/install/ament_pclint:/home/user/tracing_ws/install/ament_package:/home/user/tracing_ws/install/ament_mypy:/home/user/tracing_ws/install/ament_lint_cmake:/home/user/tracing_ws/install/ament_flake8:/home/user/tracing_ws/install/ament_copyright:/home/user/tracing_ws/install/ament_lint:/home/user/tracing_ws/install/ament_index_python:/home/user/tracing_ws/install/ament_cpplint:/home/user/tracing_ws/install/ament_cppcheck:/home/user/tracing_ws/install/ament_clang_tidy:/home/user/tracing_ws/install/ament_clang_format:/opt/ros/humble /usr/bin/cmake --install /home/user/cartographer_ws_docker/build/cartographer
