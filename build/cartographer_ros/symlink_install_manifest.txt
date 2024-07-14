@@ -58,7 +58,6 @@
 /home/user/cartographer_ws_docker/install/cartographer_ros/share/cartographer_ros//launch/backpack_2d.launch.py
 /home/user/cartographer_ws_docker/install/cartographer_ros/share/cartographer_ros//launch/backpack_3d.launch.py
 /home/user/cartographer_ws_docker/install/cartographer_ros/share/cartographer_ros//launch/cartographer_node.launch.py
-/home/user/cartographer_ws_docker/install/cartographer_ros/share/cartographer_ros//launch/cartographer_remapped_node.launch.py
 /home/user/cartographer_ws_docker/install/cartographer_ros/share/cartographer_ros//launch/cartographer_rviz.launch.py
 /home/user/cartographer_ws_docker/install/cartographer_ros/share/cartographer_ros//launch/demo_backpack_2d.launch.py
 /home/user/cartographer_ws_docker/install/cartographer_ros/share/cartographer_ros//launch/demo_backpack_2d_localization.launch.py

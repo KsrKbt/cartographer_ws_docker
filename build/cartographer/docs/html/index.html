@@ -67,94 +67,94 @@ complete documentation for using Cartographer with ROS at the
 with the standalone library. Currently, it is the best available reference.</p>
 <p>On Ubuntu 18.04 (Bionic):</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># Install the required libraries that are available as debs.</span>
-sudo<span class="w"> </span>apt-get<span class="w"> </span>update
-sudo<span class="w"> </span>apt-get<span class="w"> </span>install<span class="w"> </span>-y<span class="w"> </span><span class="se">\</span>
-<span class="w">    </span>clang<span class="w"> </span><span class="se">\</span>
-<span class="w">    </span>cmake<span class="w"> </span><span class="se">\</span>
-<span class="w">    </span>g++<span class="w"> </span><span class="se">\</span>
-<span class="w">    </span>git<span class="w"> </span><span class="se">\</span>
-<span class="w">    </span>google-mock<span class="w"> </span><span class="se">\</span>
-<span class="w">    </span>libboost-all-dev<span class="w"> </span><span class="se">\</span>
-<span class="w">    </span>libcairo2-dev<span class="w"> </span><span class="se">\</span>
-<span class="w">    </span>libcurl4-openssl-dev<span class="w"> </span><span class="se">\</span>
-<span class="w">    </span>libeigen3-dev<span class="w"> </span><span class="se">\</span>
-<span class="w">    </span>libgflags-dev<span class="w"> </span><span class="se">\</span>
-<span class="w">    </span>libgoogle-glog-dev<span class="w"> </span><span class="se">\</span>
-<span class="w">    </span>liblua5.2-dev<span class="w"> </span><span class="se">\</span>
-<span class="w">    </span>libsuitesparse-dev<span class="w"> </span><span class="se">\</span>
-<span class="w">    </span>lsb-release<span class="w"> </span><span class="se">\</span>
-<span class="w">    </span>ninja-build<span class="w"> </span><span class="se">\</span>
-<span class="w">    </span>stow
+sudo apt-get update
+sudo apt-get install -y <span class="se">\</span>
+    clang <span class="se">\</span>
+    cmake <span class="se">\</span>
+    g++ <span class="se">\</span>
+    git <span class="se">\</span>
+    google-mock <span class="se">\</span>
+    libboost-all-dev <span class="se">\</span>
+    libcairo2-dev <span class="se">\</span>
+    libcurl4-openssl-dev <span class="se">\</span>
+    libeigen3-dev <span class="se">\</span>
+    libgflags-dev <span class="se">\</span>
+    libgoogle-glog-dev <span class="se">\</span>
+    liblua5.2-dev <span class="se">\</span>
+    libsuitesparse-dev <span class="se">\</span>
+    lsb-release <span class="se">\</span>
+    ninja-build <span class="se">\</span>
+    stow
 
 <span class="c1"># Install Ceres Solver and Protocol Buffers support if available.</span>
 <span class="c1"># No need to build it ourselves.</span>
-<span class="k">if</span><span class="w"> </span><span class="o">[[</span><span class="w"> </span><span class="s2">&quot;</span><span class="k">$(</span>lsb_release<span class="w"> </span>-sc<span class="k">)</span><span class="s2">&quot;</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;focal&quot;</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="s2">&quot;</span><span class="k">$(</span>lsb_release<span class="w"> </span>-sc<span class="k">)</span><span class="s2">&quot;</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;buster&quot;</span><span class="w"> </span><span class="o">]]</span>
+<span class="k">if</span> <span class="o">[[</span> <span class="s2">&quot;</span><span class="k">$(</span>lsb_release -sc<span class="k">)</span><span class="s2">&quot;</span> <span class="o">=</span> <span class="s2">&quot;focal&quot;</span> <span class="o">||</span> <span class="s2">&quot;</span><span class="k">$(</span>lsb_release -sc<span class="k">)</span><span class="s2">&quot;</span> <span class="o">=</span> <span class="s2">&quot;buster&quot;</span> <span class="o">]]</span>
 <span class="k">then</span>
-<span class="w">  </span>sudo<span class="w"> </span>apt-get<span class="w"> </span>install<span class="w"> </span>-y<span class="w"> </span>python3-sphinx<span class="w"> </span>libgmock-dev<span class="w"> </span>libceres-dev<span class="w"> </span>protobuf-compiler
+  sudo apt-get install -y python3-sphinx libgmock-dev libceres-dev protobuf-compiler
 <span class="k">else</span>
-<span class="w">  </span>sudo<span class="w"> </span>apt-get<span class="w"> </span>install<span class="w"> </span>-y<span class="w"> </span>python-sphinx
-<span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="o">[[</span><span class="w"> </span><span class="s2">&quot;</span><span class="k">$(</span>lsb_release<span class="w"> </span>-sc<span class="k">)</span><span class="s2">&quot;</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;bionic&quot;</span><span class="w"> </span><span class="o">]]</span>
-<span class="w">  </span><span class="k">then</span>
-<span class="w">    </span>sudo<span class="w"> </span>apt-get<span class="w"> </span>install<span class="w"> </span>-y<span class="w"> </span>libceres-dev
-<span class="w">  </span><span class="k">fi</span>
+  sudo apt-get install -y python-sphinx
+  <span class="k">if</span> <span class="o">[[</span> <span class="s2">&quot;</span><span class="k">$(</span>lsb_release -sc<span class="k">)</span><span class="s2">&quot;</span> <span class="o">=</span> <span class="s2">&quot;bionic&quot;</span> <span class="o">]]</span>
+  <span class="k">then</span>
+    sudo apt-get install -y libceres-dev
+  <span class="k">fi</span>
 <span class="k">fi</span>
 </pre></div>
 </div>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/abseil/abseil-cpp.git
-<span class="nb">cd</span><span class="w"> </span>abseil-cpp
-git<span class="w"> </span>checkout<span class="w"> </span>d902eb869bcfacc1bad14933ed9af4bed006d481
-mkdir<span class="w"> </span>build
-<span class="nb">cd</span><span class="w"> </span>build
-cmake<span class="w"> </span>-G<span class="w"> </span>Ninja<span class="w"> </span><span class="se">\</span>
-<span class="w">  </span>-DCMAKE_BUILD_TYPE<span class="o">=</span>Release<span class="w"> </span><span class="se">\</span>
-<span class="w">  </span>-DCMAKE_POSITION_INDEPENDENT_CODE<span class="o">=</span>ON<span class="w"> </span><span class="se">\</span>
-<span class="w">  </span>-DCMAKE_INSTALL_PREFIX<span class="o">=</span>/usr/local/stow/absl<span class="w"> </span><span class="se">\</span>
-<span class="w">  </span>..
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git clone https://github.com/abseil/abseil-cpp.git
+<span class="nb">cd</span> abseil-cpp
+git checkout d902eb869bcfacc1bad14933ed9af4bed006d481
+mkdir build
+<span class="nb">cd</span> build
+cmake -G Ninja <span class="se">\</span>
+  -DCMAKE_BUILD_TYPE<span class="o">=</span>Release <span class="se">\</span>
+  -DCMAKE_POSITION_INDEPENDENT_CODE<span class="o">=</span>ON <span class="se">\</span>
+  -DCMAKE_INSTALL_PREFIX<span class="o">=</span>/usr/local/stow/absl <span class="se">\</span>
+  ..
 ninja
-sudo<span class="w"> </span>ninja<span class="w"> </span>install
-<span class="nb">cd</span><span class="w"> </span>/usr/local/stow
-sudo<span class="w"> </span>stow<span class="w"> </span>absl
+sudo ninja install
+<span class="nb">cd</span> /usr/local/stow
+sudo stow absl
 </pre></div>
 </div>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nv">VERSION</span><span class="o">=</span><span class="s2">&quot;1.13.0&quot;</span>
 
 <span class="c1"># Build and install Ceres.</span>
-git<span class="w"> </span>clone<span class="w"> </span>https://ceres-solver.googlesource.com/ceres-solver
-<span class="nb">cd</span><span class="w"> </span>ceres-solver
-git<span class="w"> </span>checkout<span class="w"> </span>tags/<span class="si">${</span><span class="nv">VERSION</span><span class="si">}</span>
-mkdir<span class="w"> </span>build
-<span class="nb">cd</span><span class="w"> </span>build
-cmake<span class="w"> </span>..<span class="w"> </span>-G<span class="w"> </span>Ninja<span class="w"> </span>-DCXX11<span class="o">=</span>ON
+git clone https://ceres-solver.googlesource.com/ceres-solver
+<span class="nb">cd</span> ceres-solver
+git checkout tags/<span class="si">${</span><span class="nv">VERSION</span><span class="si">}</span>
+mkdir build
+<span class="nb">cd</span> build
+cmake .. -G Ninja -DCXX11<span class="o">=</span>ON
 ninja
-<span class="nv">CTEST_OUTPUT_ON_FAILURE</span><span class="o">=</span><span class="m">1</span><span class="w"> </span>ninja<span class="w"> </span><span class="nb">test</span>
-sudo<span class="w"> </span>ninja<span class="w"> </span>install
+<span class="nv">CTEST_OUTPUT_ON_FAILURE</span><span class="o">=</span><span class="m">1</span> ninja <span class="nb">test</span>
+sudo ninja install
 </pre></div>
 </div>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nv">VERSION</span><span class="o">=</span><span class="s2">&quot;v3.4.1&quot;</span>
 
 <span class="c1"># Build and install proto3.</span>
-git<span class="w"> </span>clone<span class="w"> </span>https://github.com/google/protobuf.git
-<span class="nb">cd</span><span class="w"> </span>protobuf
-git<span class="w"> </span>checkout<span class="w"> </span>tags/<span class="si">${</span><span class="nv">VERSION</span><span class="si">}</span>
-mkdir<span class="w"> </span>build
-<span class="nb">cd</span><span class="w"> </span>build
-cmake<span class="w"> </span>-G<span class="w"> </span>Ninja<span class="w"> </span><span class="se">\</span>
-<span class="w">  </span>-DCMAKE_POSITION_INDEPENDENT_CODE<span class="o">=</span>ON<span class="w"> </span><span class="se">\</span>
-<span class="w">  </span>-DCMAKE_BUILD_TYPE<span class="o">=</span>Release<span class="w"> </span><span class="se">\</span>
-<span class="w">  </span>-Dprotobuf_BUILD_TESTS<span class="o">=</span>OFF<span class="w"> </span><span class="se">\</span>
-<span class="w">  </span>../cmake
+git clone https://github.com/google/protobuf.git
+<span class="nb">cd</span> protobuf
+git checkout tags/<span class="si">${</span><span class="nv">VERSION</span><span class="si">}</span>
+mkdir build
+<span class="nb">cd</span> build
+cmake -G Ninja <span class="se">\</span>
+  -DCMAKE_POSITION_INDEPENDENT_CODE<span class="o">=</span>ON <span class="se">\</span>
+  -DCMAKE_BUILD_TYPE<span class="o">=</span>Release <span class="se">\</span>
+  -Dprotobuf_BUILD_TESTS<span class="o">=</span>OFF <span class="se">\</span>
+  ../cmake
 ninja
-sudo<span class="w"> </span>ninja<span class="w"> </span>install
+sudo ninja install
 </pre></div>
 </div>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># Build and install Cartographer.</span>
-<span class="nb">cd</span><span class="w"> </span>cartographer
-mkdir<span class="w"> </span>build
-<span class="nb">cd</span><span class="w"> </span>build
-cmake<span class="w"> </span>..<span class="w"> </span>-G<span class="w"> </span>Ninja
+<span class="nb">cd</span> cartographer
+mkdir build
+<span class="nb">cd</span> build
+cmake .. -G Ninja
 ninja
-<span class="nv">CTEST_OUTPUT_ON_FAILURE</span><span class="o">=</span><span class="m">1</span><span class="w"> </span>ninja<span class="w"> </span><span class="nb">test</span>
-sudo<span class="w"> </span>ninja<span class="w"> </span>install
+<span class="nv">CTEST_OUTPUT_ON_FAILURE</span><span class="o">=</span><span class="m">1</span> ninja <span class="nb">test</span>
+sudo ninja install
 </pre></div>
 </div>
 </section>

@@ -1,1 +1,0 @@
-/home/user/cartographer_ws_docker/src/cartographer_ros/cartographer_ros/launch/cartographer_remapped_node.launch.py

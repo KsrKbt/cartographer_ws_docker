@@ -1,0 +1,4 @@
+Invoking command in '/home/user/cartographer_ws_docker/build/cartographer': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/user/cartographer_ws_docker/build/cartographer -- -j12 -l12
+Invoked command in '/home/user/cartographer_ws_docker/build/cartographer' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/user/cartographer_ws_docker/build/cartographer -- -j12 -l12
+Invoking command in '/home/user/cartographer_ws_docker/build/cartographer': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/user/cartographer_ws_docker/build/cartographer
+Invoked command in '/home/user/cartographer_ws_docker/build/cartographer' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/user/cartographer_ws_docker/build/cartographer

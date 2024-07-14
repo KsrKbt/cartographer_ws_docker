@@ -83,12 +83,12 @@ Furthermore, trajectory nodes outside of loop closure areas can’t be considere
 <section id="how-to">
 <h2>How-To<a class="headerlink" href="#how-to" title="Permalink to this headline">¶</a></h2>
 <p>Given a serialized state of a fully optimized trajectory (here: <code class="docutils literal notranslate"><span class="pre">optimized.pbstream</span></code> file), the ground truth relations can be generated with the following command:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span><span class="w"> </span>&lt;build&gt;<span class="w">  </span><span class="c1"># (directory where Cartographer&#39;s binaries are located)</span>
-./cartographer_autogenerate_ground_truth<span class="w"> </span>-pose_graph_filename<span class="w"> </span>optimized.pbstream<span class="w"> </span>-output_filename<span class="w"> </span>relations.pbstream<span class="w"> </span>-min_covered_distance<span class="w"> </span><span class="m">100</span><span class="w"> </span>-outlier_threshold_meters<span class="w"> </span><span class="m">0</span>.15<span class="w"> </span>-outlier_threshold_radians<span class="w"> </span><span class="m">0</span>.02
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span> &lt;build&gt;  <span class="c1"># (directory where Cartographer&#39;s binaries are located)</span>
+./cartographer_autogenerate_ground_truth -pose_graph_filename optimized.pbstream -output_filename relations.pbstream -min_covered_distance <span class="m">100</span> -outlier_threshold_meters <span class="m">0</span>.15 -outlier_threshold_radians <span class="m">0</span>.02
 </pre></div>
 </div>
 <p>Then, a non-optimized trajectory <code class="docutils literal notranslate"><span class="pre">test.pbstream</span></code> can be evaluated against the generated relations with:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>./cartographer_compute_relations_metrics<span class="w"> </span>-relations_filename<span class="w"> </span>relations.pbstream<span class="w"> </span>-pose_graph_filename<span class="w"> </span>test.pbstream
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>./cartographer_compute_relations_metrics -relations_filename relations.pbstream -pose_graph_filename test.pbstream
 </pre></div>
 </div>
 <p>This will produce output in this form:</p>

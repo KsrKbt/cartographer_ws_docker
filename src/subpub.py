@@ -1,44 +1,53 @@
 import rclpy
 from rclpy.node import Node
 from tf2_msgs.msg import TFMessage
-from cartographer_ros_msgs.msg import SubmapList
-from nav_msgs.msg import OccupancyGrid, Odometry
-from sensor_msgs.msg import LaserScan
-from std_msgs.msg import Header
-from geometry_msgs.msg import TransformStamped, Vector3, Quaternion, Pose, PoseStamped, Point, Twist
+from nav_msgs.msg import OccupancyGrid
+from rclpy.qos import QoSProfile, ReliabilityPolicy, HistoryPolicy, DurabilityPolicy
 import websocket
 import json
 import threading
+import time
 
 class CartographerDataTransferNode(Node):
     def __init__(self):
         super().__init__('cartographer_data_transfer_node')
         
-        self.tf_sub = self.create_subscription(TFMessage, '/tf', self.tf_callback, 10)
-        self.submap_list_sub = self.create_subscription(SubmapList, '/submap_list', self.submap_list_callback, 10)
-        self.map_sub = self.create_subscription(OccupancyGrid, '/map', self.map_callback, 10)
+        qos_profile = QoSProfile(
+            reliability=ReliabilityPolicy.RELIABLE,
+            history=HistoryPolicy.KEEP_LAST,
+            depth=10,
+            durability=DurabilityPolicy.VOLATILE
+        )
+
+        self.tf_sub = self.create_subscription(TFMessage, '/tf', self.tf_callback, qos_profile)
+        self.map_sub = self.create_subscription(OccupancyGrid, '/map', self.map_callback, qos_profile)
         
-        self.scan_pub = self.create_publisher(LaserScan, '/scan', 10)
-        self.odom_pub = self.create_publisher(Odometry, '/odom', 10)
-        
-        self.ws = websocket.WebSocketApp("ws://192.168.1.23:9090",
-                                         on_open=self.on_open,
-                                         on_message=self.on_message,
-                                         on_error=self.on_error,
-                                         on_close=self.on_close)
-        
-        self.ws_thread = threading.Thread(target=self.ws.run_forever)
-        self.ws_thread.start()
+        self.ws = None
+        self.connect_websocket()
 
     def tf_callback(self, msg):
+        self.get_logger().info(f"Received TF message with {len(msg.transforms)} transforms")
         self.send_to_pc1('/tf', msg)
 
-    def submap_list_callback(self, msg):
-        # サブマップリストは内部処理用なので転送しない
-        pass
-
     def map_callback(self, msg):
+        self.get_logger().info("Received map message")
         self.send_to_pc1('/map', msg)
+
+    def connect_websocket(self):
+        while rclpy.ok():
+            try:
+                self.ws = websocket.WebSocketApp("ws://192.168.1.23:9090",
+                                                 on_open=self.on_open,
+                                                 on_message=self.on_message,
+                                                 on_error=self.on_error,
+                                                 on_close=self.on_close)
+                self.ws_thread = threading.Thread(target=self.ws.run_forever)
+                self.ws_thread.start()
+                self.get_logger().info("WebSocket connection thread started")
+                break
+            except Exception as e:
+                self.get_logger().error(f"Failed to connect to WebSocket: {e}")
+                time.sleep(5)
 
     def send_to_pc1(self, topic, msg):
         data = {
@@ -46,18 +55,18 @@ class CartographerDataTransferNode(Node):
             "topic": topic,
             "msg": self.ros_msg_to_dict(msg)
         }
-        self.ws.send(json.dumps(data))
+        try:
+            if self.ws and self.ws.sock and self.ws.sock.connected:
+                self.ws.send(json.dumps(data))
+                self.get_logger().info(f"Sent data to PC1: {topic}")
+            else:
+                self.get_logger().warn("WebSocket is not connected. Attempting to reconnect...")
+                self.connect_websocket()
+        except Exception as e:
+            self.get_logger().error(f"Error sending data: {e}")
 
     def on_message(self, ws, message):
-        data = json.loads(message)
-        if data['topic'] == '/scan':
-            scan_msg = self.dict_to_scan(data['msg'])
-            self.scan_pub.publish(scan_msg)
-            self.get_logger().info('Received and republished scan data from PC1')
-        elif data['topic'] == '/odom':
-            odom_msg = self.dict_to_odom(data['msg'])
-            self.odom_pub.publish(odom_msg)
-            self.get_logger().info('Received and republished odom data from PC1')
+        self.get_logger().debug(f"Received message: {message}")
 
     def on_open(self, ws):
         self.get_logger().info("WebSocket connection opened")
@@ -67,6 +76,7 @@ class CartographerDataTransferNode(Node):
 
     def on_close(self, ws, close_status_code, close_msg):
         self.get_logger().info(f"WebSocket connection closed: {close_status_code} - {close_msg}")
+        self.connect_websocket()
 
     def ros_msg_to_dict(self, msg):
         if isinstance(msg, TFMessage):
@@ -122,41 +132,16 @@ class CartographerDataTransferNode(Node):
     def vector3_to_dict(self, vector3):
         return {"x": vector3.x, "y": vector3.y, "z": vector3.z}
 
-    def dict_to_scan(self, data):
-        scan_msg = LaserScan()
-        scan_msg.header = self.dict_to_header(data['header'])
-        scan_msg.angle_min = data['angle_min']
-        scan_msg.angle_max = data['angle_max']
-        scan_msg.angle_increment = data['angle_increment']
-        scan_msg.time_increment = data['time_increment']
-        scan_msg.scan_time = data['scan_time']
-        scan_msg.range_min = data['range_min']
-        scan_msg.range_max = data['range_max']
-        scan_msg.ranges = data['ranges']
-        scan_msg.intensities = data['intensities']
-        return scan_msg
+def main():
+    rclpy.init()
+    node = CartographerDataTransferNode()
+    try:
+        rclpy.spin(node)
+    except KeyboardInterrupt:
+        pass
+    finally:
+        node.destroy_node()
+        rclpy.shutdown()
 
-    def dict_to_odom(self, data):
-        odom_msg = Odometry()
-        odom_msg.header = self.dict_to_header(data['header'])
-        odom_msg.child_frame_id = data['child_frame_id']
-        odom_msg.pose = self.dict_to_pose_with_covariance(data['pose'])
-        odom_msg.twist = self.dict_to_twist_with_covariance(data['twist'])
-        return odom_msg
-
-    def dict_to_header(self, header_dict):
-        header = Header()
-        header.stamp.sec = header_dict['stamp']['sec']
-        header.stamp.nanosec = header_dict['stamp']['nanosec']
-        header.frame_id = header_dict['frame_id']
-        return header
-
-    def dict_to_pose_with_covariance(self, pose_with_cov_dict):
-        pose_with_cov = PoseWithCovariance()
-        pose_with_cov.pose = self.dict_to_pose(pose_with_cov_dict['pose'])
-        pose_with_cov.covariance = pose_with_cov_dict['covariance']
-        return pose_with_cov
-
-    def dict_to_twist_with_covariance(self, twist_with_cov_dict):
-        twist_with_cov = TwistWithCovariance()
-        twist_with_cov.twist
+if __name__ == '__main__':
+    main()
