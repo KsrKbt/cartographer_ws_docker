@@ -1869,7 +1869,7 @@
 	"MOC_RELAXED_MODE" : false,
 	"MOC_SKIP" : [],
 	"MULTI_CONFIG" : false,
-	"PARALLEL" : 6,
+	"PARALLEL" : 16,
 	"PARSE_CACHE_FILE" : "/home/user/cartographer_ws_docker/build/cartographer_rviz/CMakeFiles/cartographer_rviz_autogen.dir/ParseCache.txt",
 	"QT_MOC_EXECUTABLE" : "/usr/lib/qt5/bin/moc",
 	"QT_UIC_EXECUTABLE" : "",

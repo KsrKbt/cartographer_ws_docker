@@ -36,7 +36,7 @@ class CartographerDataTransferNode(Node):
     def connect_websocket(self):
         while rclpy.ok():
             try:
-                self.ws = websocket.WebSocketApp("ws://192.168.1.23:9090",
+                self.ws = websocket.WebSocketApp("ws://192.168.65.108:9090",
                                                  on_open=self.on_open,
                                                  on_message=self.on_message,
                                                  on_error=self.on_error,
