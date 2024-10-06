@@ -1,1 +1,0 @@
-/home/user/cartographer_ws_docker/src/cartographer_ros/cartographer_ros/include/cartographer_ros/offline_node.h

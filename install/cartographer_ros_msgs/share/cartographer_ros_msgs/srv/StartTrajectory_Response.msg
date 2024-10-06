@@ -1,1 +1,0 @@
-/home/user/cartographer_ws_docker/build/cartographer_ros_msgs/rosidl_cmake/srv/StartTrajectory_Response.msg

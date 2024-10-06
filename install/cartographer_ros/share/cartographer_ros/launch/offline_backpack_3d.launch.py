@@ -1,1 +1,0 @@
-/home/user/cartographer_ws_docker/src/cartographer_ros/cartographer_ros/launch/offline_backpack_3d.launch.py

@@ -1,7 +1,0 @@
-/home/user/cartographer_ws_docker/install/cartographer_rviz/lib/libcartographer_rviz.so
-/home/user/cartographer_ws_docker/install/cartographer_rviz/share/cartographer_rviz/ogre_media/materials/glsl120/submap.vert
-/home/user/cartographer_ws_docker/install/cartographer_rviz/share/cartographer_rviz/ogre_media/materials/glsl120/glsl120.program
-/home/user/cartographer_ws_docker/install/cartographer_rviz/share/cartographer_rviz/ogre_media/materials/glsl120/submap.frag
-/home/user/cartographer_ws_docker/install/cartographer_rviz/share/cartographer_rviz/ogre_media/materials/scripts/submap.material
-/home/user/cartographer_ws_docker/install/cartographer_rviz/share/cartographer_rviz/cmake/cartographer_rvizExport.cmake
-/home/user/cartographer_ws_docker/install/cartographer_rviz/share/cartographer_rviz/cmake/cartographer_rvizExport-release.cmake
