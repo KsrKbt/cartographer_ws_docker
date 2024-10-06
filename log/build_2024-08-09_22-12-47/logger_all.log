@@ -1,0 +1,430 @@
+[0.051s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--symlink-install']
+[0.051s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=True, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=12, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7d30cdd28910>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7d30cdea0c40>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7d30cdea0c40>>)
+[0.127s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.127s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.127s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.127s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.127s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.127s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.127s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/user/cartographer_ws_docker'
+[0.127s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.127s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.127s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.128s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.128s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.128s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.128s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.128s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.128s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.134s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.134s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.134s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.134s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.134s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.134s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.134s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.134s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.134s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.134s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.134s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.134s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.134s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.134s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.134s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.134s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.134s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.134s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.134s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.134s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.134s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(src/backup) by extensions ['ignore', 'ignore_ament_install']
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(src/backup) by extension 'ignore'
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(src/backup) by extension 'ignore_ament_install'
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(src/backup) by extensions ['colcon_pkg']
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(src/backup) by extension 'colcon_pkg'
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(src/backup) by extensions ['colcon_meta']
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(src/backup) by extension 'colcon_meta'
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(src/backup) by extensions ['ros']
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(src/backup) by extension 'ros'
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(src/backup) by extensions ['cmake', 'python']
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(src/backup) by extension 'cmake'
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(src/backup) by extension 'python'
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(src/backup) by extensions ['python_setup_py']
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(src/backup) by extension 'python_setup_py'
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(src/backup/first_remapped) by extensions ['ignore', 'ignore_ament_install']
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(src/backup/first_remapped) by extension 'ignore'
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(src/backup/first_remapped) by extension 'ignore_ament_install'
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(src/backup/first_remapped) by extensions ['colcon_pkg']
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(src/backup/first_remapped) by extension 'colcon_pkg'
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(src/backup/first_remapped) by extensions ['colcon_meta']
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(src/backup/first_remapped) by extension 'colcon_meta'
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(src/backup/first_remapped) by extensions ['ros']
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(src/backup/first_remapped) by extension 'ros'
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(src/backup/first_remapped) by extensions ['cmake', 'python']
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(src/backup/first_remapped) by extension 'cmake'
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(src/backup/first_remapped) by extension 'python'
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(src/backup/first_remapped) by extensions ['python_setup_py']
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(src/backup/first_remapped) by extension 'python_setup_py'
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(src/cartographer) by extensions ['ignore', 'ignore_ament_install']
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(src/cartographer) by extension 'ignore'
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(src/cartographer) by extension 'ignore_ament_install'
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(src/cartographer) by extensions ['colcon_pkg']
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(src/cartographer) by extension 'colcon_pkg'
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(src/cartographer) by extensions ['colcon_meta']
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(src/cartographer) by extension 'colcon_meta'
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(src/cartographer) by extensions ['ros']
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(src/cartographer) by extension 'ros'
+[0.137s] DEBUG:colcon.colcon_core.package_identification:Package 'src/cartographer' with type 'ros.cmake' and name 'cartographer'
+[0.137s] Level 1:colcon.colcon_core.package_identification:_identify(src/cartographer_ros) by extensions ['ignore', 'ignore_ament_install']
+[0.137s] Level 1:colcon.colcon_core.package_identification:_identify(src/cartographer_ros) by extension 'ignore'
+[0.137s] Level 1:colcon.colcon_core.package_identification:_identify(src/cartographer_ros) by extension 'ignore_ament_install'
+[0.137s] Level 1:colcon.colcon_core.package_identification:_identify(src/cartographer_ros) by extensions ['colcon_pkg']
+[0.137s] Level 1:colcon.colcon_core.package_identification:_identify(src/cartographer_ros) by extension 'colcon_pkg'
+[0.137s] Level 1:colcon.colcon_core.package_identification:_identify(src/cartographer_ros) by extensions ['colcon_meta']
+[0.137s] Level 1:colcon.colcon_core.package_identification:_identify(src/cartographer_ros) by extension 'colcon_meta'
+[0.137s] Level 1:colcon.colcon_core.package_identification:_identify(src/cartographer_ros) by extensions ['ros']
+[0.137s] Level 1:colcon.colcon_core.package_identification:_identify(src/cartographer_ros) by extension 'ros'
+[0.137s] Level 1:colcon.colcon_core.package_identification:_identify(src/cartographer_ros) by extensions ['cmake', 'python']
+[0.137s] Level 1:colcon.colcon_core.package_identification:_identify(src/cartographer_ros) by extension 'cmake'
+[0.137s] Level 1:colcon.colcon_core.package_identification:_identify(src/cartographer_ros) by extension 'python'
+[0.137s] Level 1:colcon.colcon_core.package_identification:_identify(src/cartographer_ros) by extensions ['python_setup_py']
+[0.137s] Level 1:colcon.colcon_core.package_identification:_identify(src/cartographer_ros) by extension 'python_setup_py'
+[0.137s] Level 1:colcon.colcon_core.package_identification:_identify(src/cartographer_ros/cartographer_ros) by extensions ['ignore', 'ignore_ament_install']
+[0.137s] Level 1:colcon.colcon_core.package_identification:_identify(src/cartographer_ros/cartographer_ros) by extension 'ignore'
+[0.137s] Level 1:colcon.colcon_core.package_identification:_identify(src/cartographer_ros/cartographer_ros) by extension 'ignore_ament_install'
+[0.137s] Level 1:colcon.colcon_core.package_identification:_identify(src/cartographer_ros/cartographer_ros) by extensions ['colcon_pkg']
+[0.137s] Level 1:colcon.colcon_core.package_identification:_identify(src/cartographer_ros/cartographer_ros) by extension 'colcon_pkg'
+[0.137s] Level 1:colcon.colcon_core.package_identification:_identify(src/cartographer_ros/cartographer_ros) by extensions ['colcon_meta']
+[0.137s] Level 1:colcon.colcon_core.package_identification:_identify(src/cartographer_ros/cartographer_ros) by extension 'colcon_meta'
+[0.137s] Level 1:colcon.colcon_core.package_identification:_identify(src/cartographer_ros/cartographer_ros) by extensions ['ros']
+[0.137s] Level 1:colcon.colcon_core.package_identification:_identify(src/cartographer_ros/cartographer_ros) by extension 'ros'
+[0.139s] DEBUG:colcon.colcon_core.package_identification:Package 'src/cartographer_ros/cartographer_ros' with type 'ros.ament_cmake' and name 'cartographer_ros'
+[0.139s] Level 1:colcon.colcon_core.package_identification:_identify(src/cartographer_ros/cartographer_ros_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.139s] Level 1:colcon.colcon_core.package_identification:_identify(src/cartographer_ros/cartographer_ros_msgs) by extension 'ignore'
+[0.139s] Level 1:colcon.colcon_core.package_identification:_identify(src/cartographer_ros/cartographer_ros_msgs) by extension 'ignore_ament_install'
+[0.139s] Level 1:colcon.colcon_core.package_identification:_identify(src/cartographer_ros/cartographer_ros_msgs) by extensions ['colcon_pkg']
+[0.139s] Level 1:colcon.colcon_core.package_identification:_identify(src/cartographer_ros/cartographer_ros_msgs) by extension 'colcon_pkg'
+[0.139s] Level 1:colcon.colcon_core.package_identification:_identify(src/cartographer_ros/cartographer_ros_msgs) by extensions ['colcon_meta']
+[0.139s] Level 1:colcon.colcon_core.package_identification:_identify(src/cartographer_ros/cartographer_ros_msgs) by extension 'colcon_meta'
+[0.139s] Level 1:colcon.colcon_core.package_identification:_identify(src/cartographer_ros/cartographer_ros_msgs) by extensions ['ros']
+[0.139s] Level 1:colcon.colcon_core.package_identification:_identify(src/cartographer_ros/cartographer_ros_msgs) by extension 'ros'
+[0.139s] DEBUG:colcon.colcon_core.package_identification:Package 'src/cartographer_ros/cartographer_ros_msgs' with type 'ros.ament_cmake' and name 'cartographer_ros_msgs'
+[0.139s] Level 1:colcon.colcon_core.package_identification:_identify(src/cartographer_ros/cartographer_rviz) by extensions ['ignore', 'ignore_ament_install']
+[0.139s] Level 1:colcon.colcon_core.package_identification:_identify(src/cartographer_ros/cartographer_rviz) by extension 'ignore'
+[0.139s] Level 1:colcon.colcon_core.package_identification:_identify(src/cartographer_ros/cartographer_rviz) by extension 'ignore_ament_install'
+[0.139s] Level 1:colcon.colcon_core.package_identification:_identify(src/cartographer_ros/cartographer_rviz) by extensions ['colcon_pkg']
+[0.139s] Level 1:colcon.colcon_core.package_identification:_identify(src/cartographer_ros/cartographer_rviz) by extension 'colcon_pkg'
+[0.139s] Level 1:colcon.colcon_core.package_identification:_identify(src/cartographer_ros/cartographer_rviz) by extensions ['colcon_meta']
+[0.139s] Level 1:colcon.colcon_core.package_identification:_identify(src/cartographer_ros/cartographer_rviz) by extension 'colcon_meta'
+[0.139s] Level 1:colcon.colcon_core.package_identification:_identify(src/cartographer_ros/cartographer_rviz) by extensions ['ros']
+[0.139s] Level 1:colcon.colcon_core.package_identification:_identify(src/cartographer_ros/cartographer_rviz) by extension 'ros'
+[0.140s] DEBUG:colcon.colcon_core.package_identification:Package 'src/cartographer_ros/cartographer_rviz' with type 'ros.ament_cmake' and name 'cartographer_rviz'
+[0.140s] Level 1:colcon.colcon_core.package_identification:_identify(src/cartographer_ros/docs) by extensions ['ignore', 'ignore_ament_install']
+[0.140s] Level 1:colcon.colcon_core.package_identification:_identify(src/cartographer_ros/docs) by extension 'ignore'
+[0.140s] Level 1:colcon.colcon_core.package_identification:_identify(src/cartographer_ros/docs) ignored
+[0.140s] Level 1:colcon.colcon_core.package_identification:_identify(src/cartographer_ros/scripts) by extensions ['ignore', 'ignore_ament_install']
+[0.140s] Level 1:colcon.colcon_core.package_identification:_identify(src/cartographer_ros/scripts) by extension 'ignore'
+[0.140s] Level 1:colcon.colcon_core.package_identification:_identify(src/cartographer_ros/scripts) by extension 'ignore_ament_install'
+[0.140s] Level 1:colcon.colcon_core.package_identification:_identify(src/cartographer_ros/scripts) by extensions ['colcon_pkg']
+[0.140s] Level 1:colcon.colcon_core.package_identification:_identify(src/cartographer_ros/scripts) by extension 'colcon_pkg'
+[0.140s] Level 1:colcon.colcon_core.package_identification:_identify(src/cartographer_ros/scripts) by extensions ['colcon_meta']
+[0.140s] Level 1:colcon.colcon_core.package_identification:_identify(src/cartographer_ros/scripts) by extension 'colcon_meta'
+[0.140s] Level 1:colcon.colcon_core.package_identification:_identify(src/cartographer_ros/scripts) by extensions ['ros']
+[0.140s] Level 1:colcon.colcon_core.package_identification:_identify(src/cartographer_ros/scripts) by extension 'ros'
+[0.140s] Level 1:colcon.colcon_core.package_identification:_identify(src/cartographer_ros/scripts) by extensions ['cmake', 'python']
+[0.140s] Level 1:colcon.colcon_core.package_identification:_identify(src/cartographer_ros/scripts) by extension 'cmake'
+[0.140s] Level 1:colcon.colcon_core.package_identification:_identify(src/cartographer_ros/scripts) by extension 'python'
+[0.140s] Level 1:colcon.colcon_core.package_identification:_identify(src/cartographer_ros/scripts) by extensions ['python_setup_py']
+[0.140s] Level 1:colcon.colcon_core.package_identification:_identify(src/cartographer_ros/scripts) by extension 'python_setup_py'
+[0.140s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.140s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.140s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.140s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.140s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.151s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.151s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.152s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/user/cartographer_ws_docker/install/cartographer_rviz' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.152s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/user/cartographer_ws_docker/install/cartographer_ros' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.152s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/user/cartographer_ws_docker/install/cartographer_ros_msgs' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.152s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/user/cartographer_ws_docker/install/cartographer_rviz' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.152s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/user/cartographer_ws_docker/install/cartographer_ros' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.152s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/user/cartographer_ws_docker/install/cartographer_ros_msgs' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.152s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/user/cartographer_ws_docker/install/cartographer' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.152s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 0 installed packages in /home/user/cartographer_ws_docker/install
+[0.153s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 341 installed packages in /opt/ros/humble
+[0.161s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.181s] WARNING:colcon.colcon_core.package_selection:Some selected packages are already built in one or more underlay workspaces:
+	'cartographer_ros' is in: /opt/ros/humble
+If a package in a merged underlay workspace is overridden and it installs headers, then all packages in the overlay must sort their include directories by workspace order. Failure to do so may result in build failures or undefined behavior at run time.
+If the overridden package is used by another package in any underlay, then the overriding package in the overlay must be API and ABI compatible or undefined behavior at run time may occur.
+
+If you understand the risks and want to override a package anyways, add the following to the command line:
+	--allow-overriding cartographer_ros
+
+This may be promoted to an error in a future release of colcon-override-check.
+[0.181s] Level 5:colcon.colcon_core.verb:set package 'cartographer' build argument 'cmake_args' from command line to 'None'
+[0.181s] Level 5:colcon.colcon_core.verb:set package 'cartographer' build argument 'cmake_target' from command line to 'None'
+[0.181s] Level 5:colcon.colcon_core.verb:set package 'cartographer' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.181s] Level 5:colcon.colcon_core.verb:set package 'cartographer' build argument 'cmake_clean_cache' from command line to 'False'
+[0.181s] Level 5:colcon.colcon_core.verb:set package 'cartographer' build argument 'cmake_clean_first' from command line to 'False'
+[0.181s] Level 5:colcon.colcon_core.verb:set package 'cartographer' build argument 'cmake_force_configure' from command line to 'False'
+[0.181s] Level 5:colcon.colcon_core.verb:set package 'cartographer' build argument 'ament_cmake_args' from command line to 'None'
+[0.181s] Level 5:colcon.colcon_core.verb:set package 'cartographer' build argument 'catkin_cmake_args' from command line to 'None'
+[0.181s] Level 5:colcon.colcon_core.verb:set package 'cartographer' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.181s] DEBUG:colcon.colcon_core.verb:Building package 'cartographer' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/user/cartographer_ws_docker/build/cartographer', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/user/cartographer_ws_docker/install/cartographer', 'merge_install': False, 'path': '/home/user/cartographer_ws_docker/src/cartographer', 'symlink_install': True, 'test_result_base': None}
+[0.182s] Level 5:colcon.colcon_core.verb:set package 'cartographer_ros_msgs' build argument 'cmake_args' from command line to 'None'
+[0.182s] Level 5:colcon.colcon_core.verb:set package 'cartographer_ros_msgs' build argument 'cmake_target' from command line to 'None'
+[0.182s] Level 5:colcon.colcon_core.verb:set package 'cartographer_ros_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.182s] Level 5:colcon.colcon_core.verb:set package 'cartographer_ros_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[0.182s] Level 5:colcon.colcon_core.verb:set package 'cartographer_ros_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[0.182s] Level 5:colcon.colcon_core.verb:set package 'cartographer_ros_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[0.182s] Level 5:colcon.colcon_core.verb:set package 'cartographer_ros_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[0.182s] Level 5:colcon.colcon_core.verb:set package 'cartographer_ros_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[0.182s] Level 5:colcon.colcon_core.verb:set package 'cartographer_ros_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.182s] DEBUG:colcon.colcon_core.verb:Building package 'cartographer_ros_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/user/cartographer_ws_docker/build/cartographer_ros_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/user/cartographer_ws_docker/install/cartographer_ros_msgs', 'merge_install': False, 'path': '/home/user/cartographer_ws_docker/src/cartographer_ros/cartographer_ros_msgs', 'symlink_install': True, 'test_result_base': None}
+[0.182s] Level 5:colcon.colcon_core.verb:set package 'cartographer_ros' build argument 'cmake_args' from command line to 'None'
+[0.182s] Level 5:colcon.colcon_core.verb:set package 'cartographer_ros' build argument 'cmake_target' from command line to 'None'
+[0.182s] Level 5:colcon.colcon_core.verb:set package 'cartographer_ros' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.182s] Level 5:colcon.colcon_core.verb:set package 'cartographer_ros' build argument 'cmake_clean_cache' from command line to 'False'
+[0.182s] Level 5:colcon.colcon_core.verb:set package 'cartographer_ros' build argument 'cmake_clean_first' from command line to 'False'
+[0.182s] Level 5:colcon.colcon_core.verb:set package 'cartographer_ros' build argument 'cmake_force_configure' from command line to 'False'
+[0.182s] Level 5:colcon.colcon_core.verb:set package 'cartographer_ros' build argument 'ament_cmake_args' from command line to 'None'
+[0.182s] Level 5:colcon.colcon_core.verb:set package 'cartographer_ros' build argument 'catkin_cmake_args' from command line to 'None'
+[0.182s] Level 5:colcon.colcon_core.verb:set package 'cartographer_ros' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.182s] DEBUG:colcon.colcon_core.verb:Building package 'cartographer_ros' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/user/cartographer_ws_docker/build/cartographer_ros', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/user/cartographer_ws_docker/install/cartographer_ros', 'merge_install': False, 'path': '/home/user/cartographer_ws_docker/src/cartographer_ros/cartographer_ros', 'symlink_install': True, 'test_result_base': None}
+[0.182s] Level 5:colcon.colcon_core.verb:set package 'cartographer_rviz' build argument 'cmake_args' from command line to 'None'
+[0.182s] Level 5:colcon.colcon_core.verb:set package 'cartographer_rviz' build argument 'cmake_target' from command line to 'None'
+[0.182s] Level 5:colcon.colcon_core.verb:set package 'cartographer_rviz' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.182s] Level 5:colcon.colcon_core.verb:set package 'cartographer_rviz' build argument 'cmake_clean_cache' from command line to 'False'
+[0.182s] Level 5:colcon.colcon_core.verb:set package 'cartographer_rviz' build argument 'cmake_clean_first' from command line to 'False'
+[0.182s] Level 5:colcon.colcon_core.verb:set package 'cartographer_rviz' build argument 'cmake_force_configure' from command line to 'False'
+[0.182s] Level 5:colcon.colcon_core.verb:set package 'cartographer_rviz' build argument 'ament_cmake_args' from command line to 'None'
+[0.182s] Level 5:colcon.colcon_core.verb:set package 'cartographer_rviz' build argument 'catkin_cmake_args' from command line to 'None'
+[0.182s] Level 5:colcon.colcon_core.verb:set package 'cartographer_rviz' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.182s] DEBUG:colcon.colcon_core.verb:Building package 'cartographer_rviz' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/user/cartographer_ws_docker/build/cartographer_rviz', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/user/cartographer_ws_docker/install/cartographer_rviz', 'merge_install': False, 'path': '/home/user/cartographer_ws_docker/src/cartographer_ros/cartographer_rviz', 'symlink_install': True, 'test_result_base': None}
+[0.182s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.183s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.183s] INFO:colcon.colcon_ros.task.cmake.build:Building ROS package in '/home/user/cartographer_ws_docker/src/cartographer' with build type 'cmake'
+[0.183s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/user/cartographer_ws_docker/src/cartographer'
+[0.185s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.185s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.185s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.186s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/user/cartographer_ws_docker/src/cartographer_ros/cartographer_ros_msgs' with build type 'ament_cmake'
+[0.186s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/user/cartographer_ws_docker/src/cartographer_ros/cartographer_ros_msgs'
+[0.187s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.187s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.192s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/user/cartographer_ws_docker/build/cartographer': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/user/cartographer_ws_docker/src/cartographer -DCMAKE_INSTALL_PREFIX=/home/user/cartographer_ws_docker/install/cartographer
+[0.193s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/user/cartographer_ws_docker/build/cartographer_ros_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/user/cartographer_ws_docker/src/cartographer_ros/cartographer_ros_msgs -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/user/cartographer_ws_docker/install/cartographer_ros_msgs
+[0.926s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/user/cartographer_ws_docker/build/cartographer' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/user/cartographer_ws_docker/src/cartographer -DCMAKE_INSTALL_PREFIX=/home/user/cartographer_ws_docker/install/cartographer
+[0.927s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/user/cartographer_ws_docker/build/cartographer': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/user/cartographer_ws_docker/build/cartographer -- -j12 -l12
+[1.773s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/user/cartographer_ws_docker/build/cartographer_ros_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/user/cartographer_ws_docker/src/cartographer_ros/cartographer_ros_msgs -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/user/cartographer_ws_docker/install/cartographer_ros_msgs
+[1.775s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/user/cartographer_ws_docker/build/cartographer_ros_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/user/cartographer_ws_docker/build/cartographer_ros_msgs -- -j12 -l12
+[16.711s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/user/cartographer_ws_docker/build/cartographer_ros_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/user/cartographer_ws_docker/build/cartographer_ros_msgs -- -j12 -l12
+[17.507s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/user/cartographer_ws_docker/build/cartographer_ros_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/user/cartographer_ws_docker/build/cartographer_ros_msgs
+[21.823s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(cartographer_ros_msgs)
+[21.823s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/user/cartographer_ws_docker/build/cartographer_ros_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/user/cartographer_ws_docker/build/cartographer_ros_msgs
+[21.831s] Level 1:colcon.colcon_core.environment:checking '/home/user/cartographer_ws_docker/install/cartographer_ros_msgs' for CMake module files
+[21.831s] Level 1:colcon.colcon_core.environment:checking '/home/user/cartographer_ws_docker/install/cartographer_ros_msgs' for CMake config files
+[21.833s] Level 1:colcon.colcon_core.shell:create_environment_hook('cartographer_ros_msgs', 'cmake_prefix_path')
+[21.834s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/user/cartographer_ws_docker/install/cartographer_ros_msgs/share/cartographer_ros_msgs/hook/cmake_prefix_path.ps1'
+[21.836s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/user/cartographer_ws_docker/install/cartographer_ros_msgs/share/cartographer_ros_msgs/hook/cmake_prefix_path.dsv'
+[21.837s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/user/cartographer_ws_docker/install/cartographer_ros_msgs/share/cartographer_ros_msgs/hook/cmake_prefix_path.sh'
+[21.838s] Level 1:colcon.colcon_core.environment:checking '/home/user/cartographer_ws_docker/install/cartographer_ros_msgs/lib'
+[21.838s] Level 1:colcon.colcon_core.shell:create_environment_hook('cartographer_ros_msgs', 'ld_library_path_lib')
+[21.838s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/user/cartographer_ws_docker/install/cartographer_ros_msgs/share/cartographer_ros_msgs/hook/ld_library_path_lib.ps1'
+[21.838s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/user/cartographer_ws_docker/install/cartographer_ros_msgs/share/cartographer_ros_msgs/hook/ld_library_path_lib.dsv'
+[21.838s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/user/cartographer_ws_docker/install/cartographer_ros_msgs/share/cartographer_ros_msgs/hook/ld_library_path_lib.sh'
+[21.838s] Level 1:colcon.colcon_core.environment:checking '/home/user/cartographer_ws_docker/install/cartographer_ros_msgs/bin'
+[21.839s] Level 1:colcon.colcon_core.environment:checking '/home/user/cartographer_ws_docker/install/cartographer_ros_msgs/lib/pkgconfig/cartographer_ros_msgs.pc'
+[21.839s] Level 1:colcon.colcon_core.environment:checking '/home/user/cartographer_ws_docker/install/cartographer_ros_msgs/lib/python3.10/site-packages'
+[21.839s] Level 1:colcon.colcon_core.environment:checking '/home/user/cartographer_ws_docker/install/cartographer_ros_msgs/bin'
+[21.839s] INFO:colcon.colcon_core.shell:Creating package script '/home/user/cartographer_ws_docker/install/cartographer_ros_msgs/share/cartographer_ros_msgs/package.ps1'
+[21.840s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/user/cartographer_ws_docker/install/cartographer_ros_msgs/share/cartographer_ros_msgs/package.dsv'
+[21.841s] INFO:colcon.colcon_core.shell:Creating package script '/home/user/cartographer_ws_docker/install/cartographer_ros_msgs/share/cartographer_ros_msgs/package.sh'
+[21.842s] INFO:colcon.colcon_core.shell:Creating package script '/home/user/cartographer_ws_docker/install/cartographer_ros_msgs/share/cartographer_ros_msgs/package.bash'
+[21.842s] INFO:colcon.colcon_core.shell:Creating package script '/home/user/cartographer_ws_docker/install/cartographer_ros_msgs/share/cartographer_ros_msgs/package.zsh'
+[21.851s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/user/cartographer_ws_docker/install/cartographer_ros_msgs/share/colcon-core/packages/cartographer_ros_msgs)
+[23.169s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(cartographer_ros_msgs)
+[23.170s] Level 1:colcon.colcon_core.environment:checking '/home/user/cartographer_ws_docker/install/cartographer_ros_msgs' for CMake module files
+[23.170s] Level 1:colcon.colcon_core.environment:checking '/home/user/cartographer_ws_docker/install/cartographer_ros_msgs' for CMake config files
+[23.172s] Level 1:colcon.colcon_core.shell:create_environment_hook('cartographer_ros_msgs', 'cmake_prefix_path')
+[23.172s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/user/cartographer_ws_docker/install/cartographer_ros_msgs/share/cartographer_ros_msgs/hook/cmake_prefix_path.ps1'
+[23.173s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/user/cartographer_ws_docker/install/cartographer_ros_msgs/share/cartographer_ros_msgs/hook/cmake_prefix_path.dsv'
+[23.173s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/user/cartographer_ws_docker/install/cartographer_ros_msgs/share/cartographer_ros_msgs/hook/cmake_prefix_path.sh'
+[23.173s] Level 1:colcon.colcon_core.environment:checking '/home/user/cartographer_ws_docker/install/cartographer_ros_msgs/lib'
+[23.173s] Level 1:colcon.colcon_core.shell:create_environment_hook('cartographer_ros_msgs', 'ld_library_path_lib')
+[23.174s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/user/cartographer_ws_docker/install/cartographer_ros_msgs/share/cartographer_ros_msgs/hook/ld_library_path_lib.ps1'
+[23.174s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/user/cartographer_ws_docker/install/cartographer_ros_msgs/share/cartographer_ros_msgs/hook/ld_library_path_lib.dsv'
+[23.174s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/user/cartographer_ws_docker/install/cartographer_ros_msgs/share/cartographer_ros_msgs/hook/ld_library_path_lib.sh'
+[23.174s] Level 1:colcon.colcon_core.environment:checking '/home/user/cartographer_ws_docker/install/cartographer_ros_msgs/bin'
+[23.174s] Level 1:colcon.colcon_core.environment:checking '/home/user/cartographer_ws_docker/install/cartographer_ros_msgs/lib/pkgconfig/cartographer_ros_msgs.pc'
+[23.174s] Level 1:colcon.colcon_core.environment:checking '/home/user/cartographer_ws_docker/install/cartographer_ros_msgs/lib/python3.10/site-packages'
+[23.174s] Level 1:colcon.colcon_core.environment:checking '/home/user/cartographer_ws_docker/install/cartographer_ros_msgs/bin'
+[23.175s] INFO:colcon.colcon_core.shell:Creating package script '/home/user/cartographer_ws_docker/install/cartographer_ros_msgs/share/cartographer_ros_msgs/package.ps1'
+[23.175s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/user/cartographer_ws_docker/install/cartographer_ros_msgs/share/cartographer_ros_msgs/package.dsv'
+[23.176s] INFO:colcon.colcon_core.shell:Creating package script '/home/user/cartographer_ws_docker/install/cartographer_ros_msgs/share/cartographer_ros_msgs/package.sh'
+[23.176s] INFO:colcon.colcon_core.shell:Creating package script '/home/user/cartographer_ws_docker/install/cartographer_ros_msgs/share/cartographer_ros_msgs/package.bash'
+[23.176s] INFO:colcon.colcon_core.shell:Creating package script '/home/user/cartographer_ws_docker/install/cartographer_ros_msgs/share/cartographer_ros_msgs/package.zsh'
+[23.176s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/user/cartographer_ws_docker/install/cartographer_ros_msgs/share/colcon-core/packages/cartographer_ros_msgs)
+[71.222s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/user/cartographer_ws_docker/build/cartographer' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/user/cartographer_ws_docker/build/cartographer -- -j12 -l12
+[71.579s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/user/cartographer_ws_docker/build/cartographer': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/user/cartographer_ws_docker/build/cartographer
+[71.610s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/user/cartographer_ws_docker/build/cartographer' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/user/cartographer_ws_docker/build/cartographer
+[71.965s] Level 1:colcon.colcon_core.shell:create_environment_hook('cartographer', 'pkg_config_path')
+[71.965s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/user/cartographer_ws_docker/install/cartographer/share/cartographer/hook/pkg_config_path.ps1'
+[71.965s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/user/cartographer_ws_docker/install/cartographer/share/cartographer/hook/pkg_config_path.dsv'
+[71.965s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/user/cartographer_ws_docker/install/cartographer/share/cartographer/hook/pkg_config_path.sh'
+[71.970s] Level 1:colcon.colcon_core.shell:create_environment_hook('cartographer', 'pkg_config_path_multiarch')
+[71.970s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/user/cartographer_ws_docker/install/cartographer/share/cartographer/hook/pkg_config_path_multiarch.ps1'
+[71.970s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/user/cartographer_ws_docker/install/cartographer/share/cartographer/hook/pkg_config_path_multiarch.dsv'
+[71.970s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/user/cartographer_ws_docker/install/cartographer/share/cartographer/hook/pkg_config_path_multiarch.sh'
+[71.970s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(cartographer)
+[71.970s] Level 1:colcon.colcon_core.environment:checking '/home/user/cartographer_ws_docker/install/cartographer' for CMake module files
+[71.971s] Level 1:colcon.colcon_core.environment:checking '/home/user/cartographer_ws_docker/install/cartographer' for CMake config files
+[71.971s] Level 1:colcon.colcon_core.shell:create_environment_hook('cartographer', 'cmake_prefix_path')
+[71.971s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/user/cartographer_ws_docker/install/cartographer/share/cartographer/hook/cmake_prefix_path.ps1'
+[71.972s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/user/cartographer_ws_docker/install/cartographer/share/cartographer/hook/cmake_prefix_path.dsv'
+[71.972s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/user/cartographer_ws_docker/install/cartographer/share/cartographer/hook/cmake_prefix_path.sh'
+[71.972s] Level 1:colcon.colcon_core.environment:checking '/home/user/cartographer_ws_docker/install/cartographer/lib'
+[71.972s] Level 1:colcon.colcon_core.environment:checking '/home/user/cartographer_ws_docker/install/cartographer/bin'
+[71.972s] Level 1:colcon.colcon_core.shell:create_environment_hook('cartographer', 'path')
+[71.973s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/user/cartographer_ws_docker/install/cartographer/share/cartographer/hook/path.ps1'
+[71.973s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/user/cartographer_ws_docker/install/cartographer/share/cartographer/hook/path.dsv'
+[71.973s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/user/cartographer_ws_docker/install/cartographer/share/cartographer/hook/path.sh'
+[71.973s] Level 1:colcon.colcon_core.environment:checking '/home/user/cartographer_ws_docker/install/cartographer/lib/pkgconfig/cartographer.pc'
+[71.974s] Level 1:colcon.colcon_core.environment:checking '/home/user/cartographer_ws_docker/install/cartographer/lib/python3.10/site-packages'
+[71.974s] Level 1:colcon.colcon_core.environment:checking '/home/user/cartographer_ws_docker/install/cartographer/bin'
+[71.974s] Level 1:colcon.colcon_core.shell:create_environment_hook('cartographer', 'pythonscriptspath')
+[71.974s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/user/cartographer_ws_docker/install/cartographer/share/cartographer/hook/pythonscriptspath.ps1'
+[71.974s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/user/cartographer_ws_docker/install/cartographer/share/cartographer/hook/pythonscriptspath.dsv'
+[71.974s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/user/cartographer_ws_docker/install/cartographer/share/cartographer/hook/pythonscriptspath.sh'
+[71.975s] INFO:colcon.colcon_core.shell:Creating package script '/home/user/cartographer_ws_docker/install/cartographer/share/cartographer/package.ps1'
+[71.976s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/user/cartographer_ws_docker/install/cartographer/share/cartographer/package.dsv'
+[71.976s] INFO:colcon.colcon_core.shell:Creating package script '/home/user/cartographer_ws_docker/install/cartographer/share/cartographer/package.sh'
+[71.976s] INFO:colcon.colcon_core.shell:Creating package script '/home/user/cartographer_ws_docker/install/cartographer/share/cartographer/package.bash'
+[71.976s] INFO:colcon.colcon_core.shell:Creating package script '/home/user/cartographer_ws_docker/install/cartographer/share/cartographer/package.zsh'
+[71.977s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/user/cartographer_ws_docker/install/cartographer/share/colcon-core/packages/cartographer)
+[71.979s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/user/cartographer_ws_docker/src/cartographer_ros/cartographer_ros' with build type 'ament_cmake'
+[71.979s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/user/cartographer_ws_docker/src/cartographer_ros/cartographer_ros'
+[71.980s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[71.980s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[71.998s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/user/cartographer_ws_docker/build/cartographer_ros': CMAKE_PREFIX_PATH=/home/user/cartographer_ws_docker/install/cartographer_ros_msgs:/home/user/cartographer_ws_docker/install/cartographer:/home/user/cartographer_ws_docker/install/cartographer_rviz:/home/user/cartographer_ws_docker/install/cartographer_ros:/opt/ros/humble LD_LIBRARY_PATH=/home/user/cartographer_ws_docker/install/cartographer_ros_msgs/lib:/home/user/cartographer_ws_docker/install/cartographer_rviz/lib:/home/user/cartographer_ws_docker/install/cartographer_ros/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins /usr/bin/cmake /home/user/cartographer_ws_docker/src/cartographer_ros/cartographer_ros -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/user/cartographer_ws_docker/install/cartographer_ros
+[74.058s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/user/cartographer_ws_docker/build/cartographer_ros' returned '0': CMAKE_PREFIX_PATH=/home/user/cartographer_ws_docker/install/cartographer_ros_msgs:/home/user/cartographer_ws_docker/install/cartographer:/home/user/cartographer_ws_docker/install/cartographer_rviz:/home/user/cartographer_ws_docker/install/cartographer_ros:/opt/ros/humble LD_LIBRARY_PATH=/home/user/cartographer_ws_docker/install/cartographer_ros_msgs/lib:/home/user/cartographer_ws_docker/install/cartographer_rviz/lib:/home/user/cartographer_ws_docker/install/cartographer_ros/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins /usr/bin/cmake /home/user/cartographer_ws_docker/src/cartographer_ros/cartographer_ros -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/user/cartographer_ws_docker/install/cartographer_ros
+[74.058s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/user/cartographer_ws_docker/build/cartographer_ros': CMAKE_PREFIX_PATH=/home/user/cartographer_ws_docker/install/cartographer_ros_msgs:/home/user/cartographer_ws_docker/install/cartographer:/home/user/cartographer_ws_docker/install/cartographer_rviz:/home/user/cartographer_ws_docker/install/cartographer_ros:/opt/ros/humble LD_LIBRARY_PATH=/home/user/cartographer_ws_docker/install/cartographer_ros_msgs/lib:/home/user/cartographer_ws_docker/install/cartographer_rviz/lib:/home/user/cartographer_ws_docker/install/cartographer_ros/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins /usr/bin/cmake --build /home/user/cartographer_ws_docker/build/cartographer_ros -- -j12 -l12
+[108.444s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/user/cartographer_ws_docker/build/cartographer_ros' returned '0': CMAKE_PREFIX_PATH=/home/user/cartographer_ws_docker/install/cartographer_ros_msgs:/home/user/cartographer_ws_docker/install/cartographer:/home/user/cartographer_ws_docker/install/cartographer_rviz:/home/user/cartographer_ws_docker/install/cartographer_ros:/opt/ros/humble LD_LIBRARY_PATH=/home/user/cartographer_ws_docker/install/cartographer_ros_msgs/lib:/home/user/cartographer_ws_docker/install/cartographer_rviz/lib:/home/user/cartographer_ws_docker/install/cartographer_ros/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins /usr/bin/cmake --build /home/user/cartographer_ws_docker/build/cartographer_ros -- -j12 -l12
+[108.495s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/user/cartographer_ws_docker/build/cartographer_ros': CMAKE_PREFIX_PATH=/home/user/cartographer_ws_docker/install/cartographer_ros_msgs:/home/user/cartographer_ws_docker/install/cartographer:/home/user/cartographer_ws_docker/install/cartographer_rviz:/home/user/cartographer_ws_docker/install/cartographer_ros:/opt/ros/humble LD_LIBRARY_PATH=/home/user/cartographer_ws_docker/install/cartographer_ros_msgs/lib:/home/user/cartographer_ws_docker/install/cartographer_rviz/lib:/home/user/cartographer_ws_docker/install/cartographer_ros/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins /usr/bin/cmake --install /home/user/cartographer_ws_docker/build/cartographer_ros
+[108.979s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(cartographer_ros)
+[108.980s] Level 1:colcon.colcon_core.environment:checking '/home/user/cartographer_ws_docker/install/cartographer_ros' for CMake module files
+[108.981s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/user/cartographer_ws_docker/build/cartographer_ros' returned '0': CMAKE_PREFIX_PATH=/home/user/cartographer_ws_docker/install/cartographer_ros_msgs:/home/user/cartographer_ws_docker/install/cartographer:/home/user/cartographer_ws_docker/install/cartographer_rviz:/home/user/cartographer_ws_docker/install/cartographer_ros:/opt/ros/humble LD_LIBRARY_PATH=/home/user/cartographer_ws_docker/install/cartographer_ros_msgs/lib:/home/user/cartographer_ws_docker/install/cartographer_rviz/lib:/home/user/cartographer_ws_docker/install/cartographer_ros/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins /usr/bin/cmake --install /home/user/cartographer_ws_docker/build/cartographer_ros
+[108.981s] Level 1:colcon.colcon_core.environment:checking '/home/user/cartographer_ws_docker/install/cartographer_ros' for CMake config files
+[108.981s] Level 1:colcon.colcon_core.shell:create_environment_hook('cartographer_ros', 'cmake_prefix_path')
+[108.981s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/user/cartographer_ws_docker/install/cartographer_ros/share/cartographer_ros/hook/cmake_prefix_path.ps1'
+[108.983s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/user/cartographer_ws_docker/install/cartographer_ros/share/cartographer_ros/hook/cmake_prefix_path.dsv'
+[108.984s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/user/cartographer_ws_docker/install/cartographer_ros/share/cartographer_ros/hook/cmake_prefix_path.sh'
+[108.984s] Level 1:colcon.colcon_core.environment:checking '/home/user/cartographer_ws_docker/install/cartographer_ros/lib'
+[108.984s] Level 1:colcon.colcon_core.environment:checking '/home/user/cartographer_ws_docker/install/cartographer_ros/bin'
+[108.984s] Level 1:colcon.colcon_core.environment:checking '/home/user/cartographer_ws_docker/install/cartographer_ros/lib/pkgconfig/cartographer_ros.pc'
+[108.985s] Level 1:colcon.colcon_core.environment:checking '/home/user/cartographer_ws_docker/install/cartographer_ros/lib/python3.10/site-packages'
+[108.985s] Level 1:colcon.colcon_core.environment:checking '/home/user/cartographer_ws_docker/install/cartographer_ros/bin'
+[108.985s] INFO:colcon.colcon_core.shell:Creating package script '/home/user/cartographer_ws_docker/install/cartographer_ros/share/cartographer_ros/package.ps1'
+[108.985s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/user/cartographer_ws_docker/install/cartographer_ros/share/cartographer_ros/package.dsv'
+[108.986s] INFO:colcon.colcon_core.shell:Creating package script '/home/user/cartographer_ws_docker/install/cartographer_ros/share/cartographer_ros/package.sh'
+[108.986s] INFO:colcon.colcon_core.shell:Creating package script '/home/user/cartographer_ws_docker/install/cartographer_ros/share/cartographer_ros/package.bash'
+[108.987s] INFO:colcon.colcon_core.shell:Creating package script '/home/user/cartographer_ws_docker/install/cartographer_ros/share/cartographer_ros/package.zsh'
+[108.988s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/user/cartographer_ws_docker/install/cartographer_ros/share/colcon-core/packages/cartographer_ros)
+[109.039s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(cartographer_ros)
+[109.040s] Level 1:colcon.colcon_core.environment:checking '/home/user/cartographer_ws_docker/install/cartographer_ros' for CMake module files
+[109.040s] Level 1:colcon.colcon_core.environment:checking '/home/user/cartographer_ws_docker/install/cartographer_ros' for CMake config files
+[109.040s] Level 1:colcon.colcon_core.shell:create_environment_hook('cartographer_ros', 'cmake_prefix_path')
+[109.040s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/user/cartographer_ws_docker/install/cartographer_ros/share/cartographer_ros/hook/cmake_prefix_path.ps1'
+[109.041s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/user/cartographer_ws_docker/install/cartographer_ros/share/cartographer_ros/hook/cmake_prefix_path.dsv'
+[109.041s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/user/cartographer_ws_docker/install/cartographer_ros/share/cartographer_ros/hook/cmake_prefix_path.sh'
+[109.041s] Level 1:colcon.colcon_core.environment:checking '/home/user/cartographer_ws_docker/install/cartographer_ros/lib'
+[109.041s] Level 1:colcon.colcon_core.environment:checking '/home/user/cartographer_ws_docker/install/cartographer_ros/bin'
+[109.041s] Level 1:colcon.colcon_core.environment:checking '/home/user/cartographer_ws_docker/install/cartographer_ros/lib/pkgconfig/cartographer_ros.pc'
+[109.042s] Level 1:colcon.colcon_core.environment:checking '/home/user/cartographer_ws_docker/install/cartographer_ros/lib/python3.10/site-packages'
+[109.042s] Level 1:colcon.colcon_core.environment:checking '/home/user/cartographer_ws_docker/install/cartographer_ros/bin'
+[109.042s] INFO:colcon.colcon_core.shell:Creating package script '/home/user/cartographer_ws_docker/install/cartographer_ros/share/cartographer_ros/package.ps1'
+[109.042s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/user/cartographer_ws_docker/install/cartographer_ros/share/cartographer_ros/package.dsv'
+[109.042s] INFO:colcon.colcon_core.shell:Creating package script '/home/user/cartographer_ws_docker/install/cartographer_ros/share/cartographer_ros/package.sh'
+[109.042s] INFO:colcon.colcon_core.shell:Creating package script '/home/user/cartographer_ws_docker/install/cartographer_ros/share/cartographer_ros/package.bash'
+[109.043s] INFO:colcon.colcon_core.shell:Creating package script '/home/user/cartographer_ws_docker/install/cartographer_ros/share/cartographer_ros/package.zsh'
+[109.043s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/user/cartographer_ws_docker/install/cartographer_ros/share/colcon-core/packages/cartographer_ros)
+[109.044s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/user/cartographer_ws_docker/src/cartographer_ros/cartographer_rviz' with build type 'ament_cmake'
+[109.044s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/user/cartographer_ws_docker/src/cartographer_ros/cartographer_rviz'
+[109.045s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[109.045s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[109.062s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/user/cartographer_ws_docker/build/cartographer_rviz': CMAKE_PREFIX_PATH=/home/user/cartographer_ws_docker/install/cartographer_ros:/home/user/cartographer_ws_docker/install/cartographer_ros_msgs:/home/user/cartographer_ws_docker/install/cartographer:/home/user/cartographer_ws_docker/install/cartographer_rviz:/opt/ros/humble LD_LIBRARY_PATH=/home/user/cartographer_ws_docker/install/cartographer_ros_msgs/lib:/home/user/cartographer_ws_docker/install/cartographer_rviz/lib:/home/user/cartographer_ws_docker/install/cartographer_ros/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins /usr/bin/cmake /home/user/cartographer_ws_docker/src/cartographer_ros/cartographer_rviz -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/user/cartographer_ws_docker/install/cartographer_rviz
+[111.538s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/user/cartographer_ws_docker/build/cartographer_rviz' returned '0': CMAKE_PREFIX_PATH=/home/user/cartographer_ws_docker/install/cartographer_ros:/home/user/cartographer_ws_docker/install/cartographer_ros_msgs:/home/user/cartographer_ws_docker/install/cartographer:/home/user/cartographer_ws_docker/install/cartographer_rviz:/opt/ros/humble LD_LIBRARY_PATH=/home/user/cartographer_ws_docker/install/cartographer_ros_msgs/lib:/home/user/cartographer_ws_docker/install/cartographer_rviz/lib:/home/user/cartographer_ws_docker/install/cartographer_ros/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins /usr/bin/cmake /home/user/cartographer_ws_docker/src/cartographer_ros/cartographer_rviz -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/user/cartographer_ws_docker/install/cartographer_rviz
+[111.539s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/user/cartographer_ws_docker/build/cartographer_rviz': CMAKE_PREFIX_PATH=/home/user/cartographer_ws_docker/install/cartographer_ros:/home/user/cartographer_ws_docker/install/cartographer_ros_msgs:/home/user/cartographer_ws_docker/install/cartographer:/home/user/cartographer_ws_docker/install/cartographer_rviz:/opt/ros/humble LD_LIBRARY_PATH=/home/user/cartographer_ws_docker/install/cartographer_ros_msgs/lib:/home/user/cartographer_ws_docker/install/cartographer_rviz/lib:/home/user/cartographer_ws_docker/install/cartographer_ros/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins /usr/bin/cmake --build /home/user/cartographer_ws_docker/build/cartographer_rviz -- -j12 -l12
+[124.922s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/user/cartographer_ws_docker/build/cartographer_rviz' returned '0': CMAKE_PREFIX_PATH=/home/user/cartographer_ws_docker/install/cartographer_ros:/home/user/cartographer_ws_docker/install/cartographer_ros_msgs:/home/user/cartographer_ws_docker/install/cartographer:/home/user/cartographer_ws_docker/install/cartographer_rviz:/opt/ros/humble LD_LIBRARY_PATH=/home/user/cartographer_ws_docker/install/cartographer_ros_msgs/lib:/home/user/cartographer_ws_docker/install/cartographer_rviz/lib:/home/user/cartographer_ws_docker/install/cartographer_ros/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins /usr/bin/cmake --build /home/user/cartographer_ws_docker/build/cartographer_rviz -- -j12 -l12
+[124.942s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/user/cartographer_ws_docker/build/cartographer_rviz': CMAKE_PREFIX_PATH=/home/user/cartographer_ws_docker/install/cartographer_ros:/home/user/cartographer_ws_docker/install/cartographer_ros_msgs:/home/user/cartographer_ws_docker/install/cartographer:/home/user/cartographer_ws_docker/install/cartographer_rviz:/opt/ros/humble LD_LIBRARY_PATH=/home/user/cartographer_ws_docker/install/cartographer_ros_msgs/lib:/home/user/cartographer_ws_docker/install/cartographer_rviz/lib:/home/user/cartographer_ws_docker/install/cartographer_ros/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins /usr/bin/cmake --install /home/user/cartographer_ws_docker/build/cartographer_rviz
+[125.081s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(cartographer_rviz)
+[125.081s] Level 1:colcon.colcon_core.environment:checking '/home/user/cartographer_ws_docker/install/cartographer_rviz' for CMake module files
+[125.082s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/user/cartographer_ws_docker/build/cartographer_rviz' returned '0': CMAKE_PREFIX_PATH=/home/user/cartographer_ws_docker/install/cartographer_ros:/home/user/cartographer_ws_docker/install/cartographer_ros_msgs:/home/user/cartographer_ws_docker/install/cartographer:/home/user/cartographer_ws_docker/install/cartographer_rviz:/opt/ros/humble LD_LIBRARY_PATH=/home/user/cartographer_ws_docker/install/cartographer_ros_msgs/lib:/home/user/cartographer_ws_docker/install/cartographer_rviz/lib:/home/user/cartographer_ws_docker/install/cartographer_ros/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins /usr/bin/cmake --install /home/user/cartographer_ws_docker/build/cartographer_rviz
+[125.082s] Level 1:colcon.colcon_core.environment:checking '/home/user/cartographer_ws_docker/install/cartographer_rviz' for CMake config files
+[125.082s] Level 1:colcon.colcon_core.shell:create_environment_hook('cartographer_rviz', 'cmake_prefix_path')
+[125.082s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/user/cartographer_ws_docker/install/cartographer_rviz/share/cartographer_rviz/hook/cmake_prefix_path.ps1'
+[125.082s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/user/cartographer_ws_docker/install/cartographer_rviz/share/cartographer_rviz/hook/cmake_prefix_path.dsv'
+[125.082s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/user/cartographer_ws_docker/install/cartographer_rviz/share/cartographer_rviz/hook/cmake_prefix_path.sh'
+[125.083s] Level 1:colcon.colcon_core.environment:checking '/home/user/cartographer_ws_docker/install/cartographer_rviz/lib'
+[125.083s] Level 1:colcon.colcon_core.shell:create_environment_hook('cartographer_rviz', 'ld_library_path_lib')
+[125.083s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/user/cartographer_ws_docker/install/cartographer_rviz/share/cartographer_rviz/hook/ld_library_path_lib.ps1'
+[125.083s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/user/cartographer_ws_docker/install/cartographer_rviz/share/cartographer_rviz/hook/ld_library_path_lib.dsv'
+[125.083s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/user/cartographer_ws_docker/install/cartographer_rviz/share/cartographer_rviz/hook/ld_library_path_lib.sh'
+[125.083s] Level 1:colcon.colcon_core.environment:checking '/home/user/cartographer_ws_docker/install/cartographer_rviz/bin'
+[125.083s] Level 1:colcon.colcon_core.environment:checking '/home/user/cartographer_ws_docker/install/cartographer_rviz/lib/pkgconfig/cartographer_rviz.pc'
+[125.084s] Level 1:colcon.colcon_core.environment:checking '/home/user/cartographer_ws_docker/install/cartographer_rviz/lib/python3.10/site-packages'
+[125.084s] Level 1:colcon.colcon_core.environment:checking '/home/user/cartographer_ws_docker/install/cartographer_rviz/bin'
+[125.084s] INFO:colcon.colcon_core.shell:Creating package script '/home/user/cartographer_ws_docker/install/cartographer_rviz/share/cartographer_rviz/package.ps1'
+[125.084s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/user/cartographer_ws_docker/install/cartographer_rviz/share/cartographer_rviz/package.dsv'
+[125.084s] INFO:colcon.colcon_core.shell:Creating package script '/home/user/cartographer_ws_docker/install/cartographer_rviz/share/cartographer_rviz/package.sh'
+[125.084s] INFO:colcon.colcon_core.shell:Creating package script '/home/user/cartographer_ws_docker/install/cartographer_rviz/share/cartographer_rviz/package.bash'
+[125.085s] INFO:colcon.colcon_core.shell:Creating package script '/home/user/cartographer_ws_docker/install/cartographer_rviz/share/cartographer_rviz/package.zsh'
+[125.085s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/user/cartographer_ws_docker/install/cartographer_rviz/share/colcon-core/packages/cartographer_rviz)
+[125.105s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(cartographer_rviz)
+[125.105s] Level 1:colcon.colcon_core.environment:checking '/home/user/cartographer_ws_docker/install/cartographer_rviz' for CMake module files
+[125.105s] Level 1:colcon.colcon_core.environment:checking '/home/user/cartographer_ws_docker/install/cartographer_rviz' for CMake config files
+[125.105s] Level 1:colcon.colcon_core.shell:create_environment_hook('cartographer_rviz', 'cmake_prefix_path')
+[125.105s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/user/cartographer_ws_docker/install/cartographer_rviz/share/cartographer_rviz/hook/cmake_prefix_path.ps1'
+[125.106s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/user/cartographer_ws_docker/install/cartographer_rviz/share/cartographer_rviz/hook/cmake_prefix_path.dsv'
+[125.106s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/user/cartographer_ws_docker/install/cartographer_rviz/share/cartographer_rviz/hook/cmake_prefix_path.sh'
+[125.107s] Level 1:colcon.colcon_core.environment:checking '/home/user/cartographer_ws_docker/install/cartographer_rviz/lib'
+[125.107s] Level 1:colcon.colcon_core.shell:create_environment_hook('cartographer_rviz', 'ld_library_path_lib')
+[125.107s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/user/cartographer_ws_docker/install/cartographer_rviz/share/cartographer_rviz/hook/ld_library_path_lib.ps1'
+[125.107s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/user/cartographer_ws_docker/install/cartographer_rviz/share/cartographer_rviz/hook/ld_library_path_lib.dsv'
+[125.107s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/user/cartographer_ws_docker/install/cartographer_rviz/share/cartographer_rviz/hook/ld_library_path_lib.sh'
+[125.108s] Level 1:colcon.colcon_core.environment:checking '/home/user/cartographer_ws_docker/install/cartographer_rviz/bin'
+[125.108s] Level 1:colcon.colcon_core.environment:checking '/home/user/cartographer_ws_docker/install/cartographer_rviz/lib/pkgconfig/cartographer_rviz.pc'
+[125.108s] Level 1:colcon.colcon_core.environment:checking '/home/user/cartographer_ws_docker/install/cartographer_rviz/lib/python3.10/site-packages'
+[125.108s] Level 1:colcon.colcon_core.environment:checking '/home/user/cartographer_ws_docker/install/cartographer_rviz/bin'
+[125.109s] INFO:colcon.colcon_core.shell:Creating package script '/home/user/cartographer_ws_docker/install/cartographer_rviz/share/cartographer_rviz/package.ps1'
+[125.109s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/user/cartographer_ws_docker/install/cartographer_rviz/share/cartographer_rviz/package.dsv'
+[125.109s] INFO:colcon.colcon_core.shell:Creating package script '/home/user/cartographer_ws_docker/install/cartographer_rviz/share/cartographer_rviz/package.sh'
+[125.109s] INFO:colcon.colcon_core.shell:Creating package script '/home/user/cartographer_ws_docker/install/cartographer_rviz/share/cartographer_rviz/package.bash'
+[125.110s] INFO:colcon.colcon_core.shell:Creating package script '/home/user/cartographer_ws_docker/install/cartographer_rviz/share/cartographer_rviz/package.zsh'
+[125.110s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/user/cartographer_ws_docker/install/cartographer_rviz/share/colcon-core/packages/cartographer_rviz)
+[125.111s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[125.113s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[125.113s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[125.113s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[125.154s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[125.154s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[125.155s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[125.309s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[125.311s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/user/cartographer_ws_docker/install/local_setup.ps1'
+[125.312s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/user/cartographer_ws_docker/install/_local_setup_util_ps1.py'
+[125.313s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/user/cartographer_ws_docker/install/setup.ps1'
+[125.314s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/user/cartographer_ws_docker/install/local_setup.sh'
+[125.315s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/user/cartographer_ws_docker/install/_local_setup_util_sh.py'
+[125.316s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/user/cartographer_ws_docker/install/setup.sh'
+[125.317s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/user/cartographer_ws_docker/install/local_setup.bash'
+[125.317s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/user/cartographer_ws_docker/install/setup.bash'
+[125.319s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/user/cartographer_ws_docker/install/local_setup.zsh'
+[125.319s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/user/cartographer_ws_docker/install/setup.zsh'
