@@ -1,7 +1,7 @@
 import os
 from launch import LaunchDescription
 from launch_ros.actions import Node
-from launch.substitutions import LaunchConfiguration
+from launch.substitutions import LaunchConfiguration, LaunchConfiguration
 from launch.actions import DeclareLaunchArgument
 from ament_index_python.packages import get_package_share_directory
 
@@ -10,6 +10,9 @@ def generate_launch_description():
     cartographer_config_dir = LaunchConfiguration('cartographer_config_dir', default=os.path.join(
                                                  get_package_share_directory('cartographer_ros'), 'configuration_files'))
     configuration_basename = LaunchConfiguration('configuration_basename', default='turtlebot3.lua')
+    
+    # 新たにマップファイルのパスを指定するための引数を追加
+    pbstream_path = "/home/user/map.pbstream"
 
     return LaunchDescription([
         DeclareLaunchArgument(
@@ -23,8 +26,12 @@ def generate_launch_description():
             name='cartographer_node',
             output='screen',
             parameters=[{'use_sim_time': use_sim_time}],
-            arguments=['-configuration_directory', cartographer_config_dir,
-                       '-configuration_basename', configuration_basename]),
+            arguments=[
+                '-configuration_directory', cartographer_config_dir,
+                '-configuration_basename', configuration_basename,
+                # マップファイルのパスを引数として追加
+                '-load_state_filename', pbstream_path
+            ]),
 
         Node(
             package='cartographer_ros',
