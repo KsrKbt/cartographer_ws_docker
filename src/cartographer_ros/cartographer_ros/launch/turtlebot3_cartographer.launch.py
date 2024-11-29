@@ -12,7 +12,7 @@ def generate_launch_description():
     configuration_basename = LaunchConfiguration('configuration_basename', default='turtlebot3.lua')
     
     # 新たにマップファイルのパスを指定するための引数を追加
-    pbstream_path = "/home/user/map.pbstream"
+    pbstream_path = "/root/cartographer_ws_docker/map_rouka.pbstream"
 
     return LaunchDescription([
         DeclareLaunchArgument(
