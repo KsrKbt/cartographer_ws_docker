@@ -10,7 +10,7 @@ def generate_cartographer_node(context):
     configuration_basename = context.launch_configurations['configuration_basename']
     use_sim_time = context.launch_configurations['use_sim_time']
 
-    pbstream_path = "/home/user/cartographer_ws_docker/map_rouka.pbstream"
+    pbstream_path = "/root/cartographer_ws_docker/map.pbstream"
     cartographer_arguments = [
         '-configuration_directory', cartographer_config_dir,
         '-configuration_basename', configuration_basename
@@ -25,7 +25,7 @@ def generate_cartographer_node(context):
             executable='cartographer_node',
             name='cartographer_node',
             output='screen',
-            parameters=[{'use_sim_time': use_sim_time == 'true'}],  # bool型に変換
+            parameters=[{'use_sim_time': use_sim_time == 'true'}],
             arguments=cartographer_arguments
         )
     ]
